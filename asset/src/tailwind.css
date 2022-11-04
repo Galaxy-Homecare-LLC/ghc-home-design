@@ -1,0 +1,23 @@
+/* font family roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* font family inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-color {
+	background-image: linear-gradient(83.2deg, rgb(150, 93, 233) 10.8%, rgb(99, 88, 238) 94.3%);
+}
+.gradient-text {
+	background-image: linear-gradient(83.2deg, rgb(150, 93, 233) 10.8%, rgb(99, 88, 238) 94.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+/* min screen  height  */
+.calc-h-screen {
+	min-height: calc(100vh - 64px);
+}

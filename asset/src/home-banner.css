@@ -1,0 +1,23 @@
+.banner-img-1 {
+	background: url("../img/banner-img-1.png");
+
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner-img-2 {
+	background: url("../img/banner-img-2.png");
+
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: red, 10;
+	background: white;
+}
+
+
