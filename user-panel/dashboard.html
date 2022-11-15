@@ -11,35 +11,19 @@
 	<body>
 		<div class="relative min-h-screen md:flex" data-dev-hint="container">
 			<input type="checkbox" id="menu-open" class="hidden" />
-			<label
-				for="menu-open"
-				class="absolute right-2 bottom-2 shadow-lg rounded-full p-2 bg-gray-100 text-gray-600 md:hidden"
-				data-dev-hint="floating action button">
-				<svg
-					class="h-6 w-6"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h16" />
-				</svg>
-			</label>
+
 
 			<header
-				class="bg-gray-600 text-gray-100 flex justify-between md:hidden"
+				class="bg-slate-900 text-gray-100 flex justify-between md:hidden"
 				data-dev-hint="mobile menu bar">
-				<a href="#" class="block p-4 text-white font-bold whitespace-nowrap truncate">
-					Galaxy
+				<a href="#" class="block p-4 ">
+					<img src="../asset/img/logo-light.png" class="h-7" alt="" />
 				</a>
 
 				<label
 					for="menu-open"
 					id="mobile-menu-button"
-					class="m-2 p-2 focus:outline-none hover:text-white hover:bg-gray-700 rounded-md">
+					class="m-2 p-2 inline-flex items-center  focus:outline-none hover:text-white hover:bg-gray-700 rounded-md">
 					<svg
 						id="menu-open-icon"
 						class="h-6 w-6 transition duration-200 ease-in-out"
@@ -71,73 +55,118 @@
 
 			<aside
 				id="sidebar"
-				class="bg-slate-900 text-gray-100 md:w-64 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto"
-				data-dev-hint="sidebar; px-0 for frameless; px-2 for visually inset the navigation">
-				<div
-					class="flex flex-col space-y-6"
-					data-dev-hint="optional div for having an extra footer navigation">
+				class="bg-slate-900 text-gray-100 w-64  space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out md:flex md:flex-col md:justify-between overflow-y-auto">
+				<div class="flex flex-col space-y-6">
 					<a
 						href="#"
 						class="text-white flex items-center space-x-2 px-4"
 						title="Your App is cool">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-6 w-6 flex-0"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor">
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-						</svg>
-						<span class="text-2xl font-extrabold whitespace-nowrap truncate"
-							>Galaxy Home
-						</span>
+						<img src="../asset/img/logo-light.png" class="h-7" alt="" />
 					</a>
 
 					<nav data-dev-hint="main navigation" class="px-4">
-						<details class="group">
-							<summary
-								class="flex cursor-pointer items-center justify-between rounded-lg text-white border border-slate-600">
-								<h2 class="font-medium text-white">Dashboard</h2>
-
-								<svg
-									class="ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor">
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M19 9l-7 7-7-7" />
-								</svg>
-							</summary>
-
-							<p class="mt-4 px-4 leading-relaxed text-gray-700">Profile</p>
-						</details>
+						<aside class="" aria-label="Sidebar">
+							<div class="overflow-y-auto py-4 px-3 rounded bg-gray-800">
+								<ul class="space-y-2">
+									<li>
+										<a href="#" class="flex items-center p-2 text-base">
+											<svg
+												aria-hidden="true"
+												class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+												<path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+											</svg>
+											<span class="ml-3">Dashboard</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center p-2 text-base">
+											<svg
+												aria-hidden="true"
+												class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+											</svg>
+											<span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center p-2 text-base">
+											<svg
+												aria-hidden="true"
+												class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
+												<path
+													d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
+											</svg>
+											<span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center p-2 text-base">
+											<svg
+												aria-hidden="true"
+												class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													fill-rule="evenodd"
+													d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+													clip-rule="evenodd"></path>
+											</svg>
+											<span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex items-center p-2 text-base">
+											<svg
+												aria-hidden="true"
+												class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													fill-rule="evenodd"
+													d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+													clip-rule="evenodd"></path>
+											</svg>
+											<span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
 					</nav>
 				</div>
 
-				<nav data-dev-hint="second-main-navigation or footer navigation">
-					<a
-						href="#"
-						class="block py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white">
-						asd
-					</a>
-					<a
-						href="#"
-						class="block py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white">
-						asd
-					</a>
-					<a
-						href="#"
-						class="block py-2 px-4 transition duration-200 hover:bg-gray-700 hover:text-white">
-						asd
-					</a>
+				<nav class="p-4" data-dev-hint="second-main-navigation or footer navigation">
+					<div class="px-3 bg-gray-800 rounded-md">
+						<a href="#" class="flex items-center p-2 text-base ">
+							<svg
+								aria-hidden="true"
+								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									fill-rule="evenodd"
+									d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+									clip-rule="evenodd"></path>
+							</svg>
+							<span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+						</a>
+					</div>
 				</nav>
 			</aside>
 
