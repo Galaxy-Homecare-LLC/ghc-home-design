@@ -73,20 +73,14 @@ function Menu(e) {
 }
 
 let navbar = document.getElementById("navbar");
-const added=
-window.addEventListener("scroll", function () {
+const added = window.addEventListener("scroll", function () {
 	if (window.scrollY >= 50) {
 		navbar.classList.add("shadow-xl");
 		navbar.classList.add("dark:border-b");
-    navbar.classList.add("dark:border-slate-600");
-
-
-
+		navbar.classList.add("dark:border-slate-700");
 	} else {
 		navbar.classList.remove("shadow-xl");
 		navbar.classList.remove("dark:border-b");
-		navbar.classList.remove("dark:border-slate-600");
-
-
+		navbar.classList.remove("dark:border-white");
 	}
 });

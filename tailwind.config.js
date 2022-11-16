@@ -4,7 +4,10 @@ module.exports = {
 	content: ["**/*.{html,js}"],
 	theme: {
 		extend: {
-
+			colors: {
+				primary: "#0F182A",
+				secondary: "#1E293B",
+			},
 		},
 		fontFamily: {
 			roboto: ["Roboto", "sans-serif"],

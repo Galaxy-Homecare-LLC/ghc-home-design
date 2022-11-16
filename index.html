@@ -23,18 +23,13 @@
 		<title>Galaxy Home Care</title>
 	</head>
 
-	<body class="font-roboto dark:bg-[#15202B] bg-slate-50">
+	<body class="font-roboto dark:bg-primary bg-slate-50">
 		<header class="pt-[64px]">
-			<nav class="fixed left-0 shadow-lg right-0 top-0 z-20 dark:bg-slate-900 bg-slate-50">
+			<nav class="fixed left-0 shadow-lg right-0 top-0 z-20 dark:bg-primary bg-slate-50">
 				<div
-					class="container px-6 xl:px-16 2xl:px-0 h-16 relative dark:bg-slate-900 bg-slate-50 lg:flex lg:items-center lg:justify-between">
+					class="container px-6 xl:px-16 2xl:px-0 h-16 relative dark:bg-primary bg-slate-50 lg:flex lg:items-center lg:justify-between">
 					<div class="flex justify-between h-full items-center">
-						<!-- <span class="text-2xl  font-semibold font-inter cursor-pointer">
-
-            LOGO HERE
-          </span> -->
 						<img class="w-36 lg:w-44" src="./asset/img/logo-light.png" alt="" />
-
 						<span
 							class="text-3xl text-slate-900 dark:text-white cursor-pointer inline-flex items-center lg:hidden">
 							<i onclick="Menu(this)" class="uil uil-bars"></i>
@@ -45,8 +40,10 @@
 						id="navigation"
 						class="z-[-100] lg:z-auto lg:static absolute w-full left-0 right-0 lg:w-auto opacity-60 lg:opacity-100 max-w-none top-[-380px] transition-all ease-in duration-500">
 						<ul
-							class="flex flex-col bg-slate-50 dark:bg-slate-900 dark:text-gray-200 lg:flex-row lg:items-center gap-3 lg:gap-5 px-4 lg:px-0 w-full sm:max-w-[640px] md:max-w-3xl lg:py-0 py-4 mx-auto lg:mx-0">
+							class="flex flex-col bg-slate-50 dark:bg-primary dark:text-gray-200 lg:flex-row lg:items-center gap-3 lg:gap-5 px-4 lg:px-0 w-full sm:max-w-[640px] md:max-w-3xl lg:py-0 py-4 mx-auto lg:mx-0">
 							<li><a href="./index.html">Home</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Pricing</a></li>
 							<li><a href="./pages/appointment.html">Appointment</a></li>
 							<li><a href="./pages/career.html">Career</a></li>
 							<li><a href="./pages/gallery.html">Gallery</a></li>
@@ -166,564 +163,1353 @@
 			</section>
 		</header>
 
-		<main class=" ">
+		<main class="container px-6 xl:px-16 2xl:px-0 space-y-20 my-20">
 			<!-- services section -->
-			<section class="container px-6 space-y-20 mt-20 xl:px-16 2xl:px-0">
-				<!-- Personal Care -->
-				<div class="flex flex-col-reverse lg:flex-row items-center gap-10">
-					<div class="lg:w-8/12">
-						<h2 class="text-lg text-blue-600 font-semibold font-inter">PERSONAL CARE</h2>
-						<h3
-							class="text-2xl mt-1 mb-2 font-inter font-semibold tracking-wide text-slate-800 dark:text-white">
-							WE ASSIST YOU WITH YOUR DAY TO DAY NEEDS
-						</h3>
-						<p class="font-roboto tracking-wide text-gray-600 dark:text-gray-400">
-							Galaxy Home Care offers several care programs for seniors who are in need of
-							assistance at home. We also have various non-medical services to ensure you can
-							live each day at your best.
-						</p>
+			<section>
+				<div class="text-center mb-8">
+					<div class="font-semibold font-inter">
+						<h4 class="text-lg text-purple-600">LET'S GET STARTED</h4>
+						<h2 class="text-3xl text-slate-800 dark:text-white">AN OPPORTUNITY TO CARE</h2>
+					</div>
+					<!-- <p class="text-gray-500 dark:text-gray-400 mt-1 mx-auto lg:w-4/6">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio eveniet ullam delectus, fugit praesentium illum doloribus neque voluptatem. Dolor.doloribus neque voluptatem. Dolor.
+					</p> -->
+				</div>
+				<div
+					class="bg-white dark:bg-[#162032] border border-gray-200 dark:border-slate-700 rounded-xl p-8">
+					<div class="grid grid-cols-4 border-b border-gray-200 dark:border-slate-700">
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<!-- <p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p> -->
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid grid-cols-4 border-b border-gray-200 dark:border-slate-700">
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid grid-cols-4">
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 border-r border-gray-200 dark:border-slate-700 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex flex-col text-center items-center justify-center py-5 px-3 cursor-pointer">
+							<div class="hover:scale-105 duration-500 transition-all ease-in-out">
+								<p class="text-yellow-500 text-2xl mb-1">
+									<i class="fa-solid fa-house-medical"></i>
+								</p>
+								<h2 class="text-lg mb-1 text-slate-800 dark:text-white">
+									Companionship Care
+								</h2>
+								<p class="text-gray-500 dark:text-slate-400 text-sm">
+									Lorem ipsum dolor sit consectetur adipisicing elit.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- pricing section 2 -->
+			<section>
+				<div class="mb-8">
+					<div class="font-bold font-inter">
+						<h4 class="text-lg text-purple-600 uppercase">Pricing Table</h4>
+						<h2 class="text-2xl text-slate-800 dark:text-white uppercase">
+							General Services
+						</h2>
+					</div>
+				</div>
+				<div class="grid grid-cols-4 gap-4">
+					<div class="w-full">
+						<div
+							class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-6 dark:text-gray-400 text-gray-500">
+							<!-- <span class="text-slate-700 mb-2 block text-lg font-semibold">
+								Package A
+							</span> -->
+							<div class="">
+								<h2 class="text-[#090E34] dark:text-white text-[42px] font-bold">$400</h2>
+								<p class="-mt-2 text-sm">Per Months</p>
+							</div>
+							<p class="font-semibold text-slate-700 mt-4">Package A</p>
+							<p class="mb-4 text-base">
+								One 30-minute visit per day for 30 days in a month
+							</p>
 
-						<div class="mt-4">
-							<h4
-								class="text-lg font-semibold tracking-wide mb-1 text-slate-800 font-inter uppercase dark:text-white">
-								This service includes
-							</h4>
-							<ul class="grid sm:grid-cols-2 xl:grid-cols-1 gap-x-4 xl:gap-x-0">
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Bathroom & shower assistance
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Dressing assistance
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Medication reminders & management
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Mobiltiy assistance
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"> Meal preperation </span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"> and more </span>
-								</li>
-							</ul>
+							<a
+								href="javascript:void(0)"
+								class="text-white bg-slate-800 w-full block text-center py-2 rounded-lg">
+								Get Started
+							</a>
+							<div>
+								<span class="absolute right-0 top-7 z-[-1]">
+									<svg
+										width="77"
+										height="172"
+										viewBox="0 0 77 172"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+										<defs>
+											<linearGradient
+												id="paint0_linear"
+												x1="86"
+												y1="0"
+												x2="86"
+												y2="172"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3056D3" stop-opacity="0.09" />
+												<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</span>
+							</div>
 						</div>
+					</div>
+					<div class="w-full">
+						<div
+							class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-6 dark:text-gray-400 text-gray-500">
+							<span class="text-purple-600 mb-2 block text-lg font-semibold">
+								Package B
+							</span>
+							<div class="">
+								<h2 class="text-[#090E34] dark:text-white text-[42px] font-bold">$800</h2>
+								<p class="-mt-2 text-sm">Per Months</p>
+							</div>
+							<p class="mt-4 pb-6 text-base">
+								Two 30-minute visit per day for 30 days in a month
+							</p>
 
-						<div class="mt-2">
-							<p class="mb-2 text-gray-600 dark:text-gray-400">
-								For more information about our personal care service, please
-								<span class="">contact us</span> or
-								<span class="">set an appointment</span>
-							</p>
-							<div class="flex items-center gap-2">
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md"
-									>Contact Us</a
-								>
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md">
-									Set an Appointment</a
-								>
+							<a
+								href="javascript:void(0)"
+								class="text-purple-600 hover:bg-purple-600 hover:border-purple-600 dark:hover:border-purple-600 block w-full rounded-md border border-[#D4DEFF] dark:border-slate-600 bg-transparent py-2.5 text-center text-base font-semibold transition hover:text-white">
+								Get Started
+							</a>
+							<div>
+								<span class="absolute right-0 top-7 z-[-1]">
+									<svg
+										width="77"
+										height="172"
+										viewBox="0 0 77 172"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+										<defs>
+											<linearGradient
+												id="paint0_linear"
+												x1="86"
+												y1="0"
+												x2="86"
+												y2="172"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3056D3" stop-opacity="0.09" />
+												<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</span>
 							</div>
 						</div>
 					</div>
-					<div class="h-full md:w-4/12">
-						<img
-							src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities2.jpg"
-							class="w-full h-full rounded-lg border"
-							alt="" />
-					</div>
-				</div>
-				<!-- home health aide -->
-				<div class="flex flex-col-reverse lg:flex-row-reverse items-center gap-10">
-					<div class="lg:w-8/12">
-						<h2 class="text-lg text-blue-600 font-semibold font-inter">HOME HEALTH AIDE</h2>
-						<h3
-							class="text-2xl mt-1 mb-2 font-inter font-semibold tracking-wide text-slate-800 dark:text-white">
-							CARE AND ASSISTANCE SUITED TO YOUR NEEDS
-						</h3>
-						<p class="font-roboto tracking-wide text-gray-600 dark:text-gray-400">
-							Living comfortably and independently at home doesn’t have to be hard,
-							especially for the elderly. Even if you are managing old age, a chronic
-							illness, or other health conditions, you can still receive the care and service
-							you need to live a healthy and happy life. Our home health aides work closely
-							with Registered Nurses to assist you with your needs so you can stay securely
-							and conveniently in your own home
-						</p>
-						<div class="mt-4">
-							<h4
-								class="text-lg font-semibold tracking-wide mb-1 text-slate-800 font-inter uppercase dark:text-white">
-								This service includes
-							</h4>
-							<ul class="grid sm:grid-cols-2 xl:grid-cols-1 gap-x-4 xl:gap-x-0">
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">Bathing</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Grooming and dressing
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Checking vital signs
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Meal planning and preparing
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Encouraging and helping with exercise
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Light housekeeping
-									</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Turning and transferring
-									</span>
-								</li>
-							</ul>
-						</div>
+					<div class="w-full">
+						<div
+							class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-6 dark:text-gray-400 text-gray-500">
+							<span class="text-purple-600 mb-2 block text-lg font-semibold">
+								Package C
+							</span>
+							<div class="">
+								<h2 class="text-[#090E34] dark:text-white text-[42px] font-bold">$1200</h2>
+								<p class="-mt-2 text-sm">Per Months</p>
+							</div>
+							<p class="mt-4 pb-6 text-base">
+								Three 30-minute visit per day for 30 days in a month
+							</p>
 
-						<div class="mt-2">
-							<p class="mb-2 text-gray-600 dark:text-gray-400">
-								For more information about our home health aide service, please
-								<span class="">contact us</span> or
-								<span class="">set an appointment</span>
-							</p>
-							<div class="flex items-center gap-2">
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md"
-									>Contact Us</a
-								>
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md">
-									Set an Appointment</a
-								>
+							<a
+								href="javascript:void(0)"
+								class="text-purple-600 hover:bg-purple-600 hover:border-purple-600 dark:hover:border-purple-600 block w-full rounded-md border border-[#D4DEFF] dark:border-slate-600 bg-transparent py-2.5 text-center text-base font-semibold transition hover:text-white">
+								Get Started
+							</a>
+							<div>
+								<span class="absolute right-0 top-7 z-[-1]">
+									<svg
+										width="77"
+										height="172"
+										viewBox="0 0 77 172"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+										<defs>
+											<linearGradient
+												id="paint0_linear"
+												x1="86"
+												y1="0"
+												x2="86"
+												y2="172"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3056D3" stop-opacity="0.09" />
+												<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</span>
 							</div>
 						</div>
-					</div>
-					<div class="h-full md:w-4/12">
-						<img
-							src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities.jpg"
-							class="w-full h-full rounded-lg border"
-							alt="" />
 					</div>
 				</div>
-				<!-- companion care -->
-				<div class="flex flex-col-reverse lg:flex-row items-center gap-10">
-					<div class="lg:w-8/12">
-						<h2 class="text-lg text-blue-600 font-semibold font-inter">COMPANION CARE</h2>
-						<h3
-							class="text-2xl mt-1 mb-2 font-inter font-semibold tracking-wide text-slate-800 dark:text-white">
-							BUILDING A CARING FRIENDSHIP.
-						</h3>
-						<p class="font-roboto tracking-wide text-gray-600 dark:text-gray-400">
-							Having someone to depend and lean on can be beneficial to an older adult’s
-							physical and mental health. Our companions at Galaxy Home Care provide you with
-							friendship and assistance so that you don’t have to spend your day alone and
-							with difficulty.
-						</p>
-						<div class="mt-3">
-							<h4
-								class="text-lg font-semibold tracking-wide mb-1 text-slate-800 font-inter uppercase dark:text-white">
-								This service includes
-							</h4>
-							<ul class="grid sm:grid-cols-2 xl:grid-cols-1 gap-x-4 xl:gap-x-0">
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Planning and keeping appointments</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"
-										>Bedtime and morning assistance</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">Grocery shopping</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"
-										>Encouraging socialization</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"
-										>Playing care or doing hobbies</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"
-										>Organizing mail or bills</span
-									>
-								</li>
-							</ul>
-						</div>
-						<div class="mt-2">
-							<p class="mb-2 text-gray-600 dark:text-gray-400">
-								For more information about our companion care service, please
-								<span class="">contact us</span> or
-								<span class="">set an appointment</span>
-							</p>
-							<div class="flex items-center gap-2">
+			</section>
+			<!-- pricing section -->
+			<section class="relative font-inter overflow-hidden">
+				<div class="text-center mb-8">
+					<div class="font-bold font-inter">
+						<h4 class="text-lg text-purple-600 uppercase">Pricing Table</h4>
+						<h2 class="text-3xl text-slate-800 dark:text-white uppercase">
+							Our Pricing Plan
+						</h2>
+					</div>
+					<p class="text-gray-500 dark:text-gray-400 mt-1 mx-auto lg:w-5/12">
+						There are many variations of passages of Lorem Ipsum available but the majority
+						have suffered alteration in some form.
+					</p>
+				</div>
+				<div class="">
+					<div class="grid grid-cols-4 gap-6">
+						<div class="w-full">
+							<div
+								class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-6 dark:text-gray-400 text-gray-500">
+								<span class="text-purple-600 mb-2 block text-lg font-semibold">
+									General Services
+								</span>
+								<h2 class="text-[#090E34] dark:text-white mb-2 text-[42px] font-bold">
+									$59
+									<span class="text-base font-medium text-gray-500 dark:text-gray-400">
+										/ year
+									</span>
+								</h2>
+								<p
+									class="mb-5 pb-6 border-b border-[#F2F2F2] dark:border-b-slate-600 text-base">
+									Perfect for using in a personal website or a client project.
+								</p>
+								<div class="mb-5">
+									<p class="mb-1 text-base leading-loose">1 User</p>
+									<p class="mb-1 text-base leading-loose">All UI components</p>
+									<p class="mb-1 text-base leading-loose">Lifetime access</p>
+									<p class="mb-1 text-base leading-loose">Free updates</p>
+									<p class="mb-1 text-base leading-loose">Use on 1 (one) project</p>
+									<p class="mb-1 text-base leading-loose">3 Months support</p>
+								</div>
 								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md"
-									>Contact Us</a
-								>
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md">
-									Set an Appointment</a
-								>
+									href="javascript:void(0)"
+									class="text-purple-600 hover:bg-purple-600 hover:border-purple-600 dark:hover:border-purple-600 block w-full rounded-md border border-[#D4DEFF] dark:border-slate-600 bg-transparent py-2.5 text-center text-base font-semibold transition hover:text-white">
+									Choose Personal
+								</a>
+								<div>
+									<span class="absolute right-0 top-7 z-[-1]">
+										<svg
+											width="77"
+											height="172"
+											viewBox="0 0 77 172"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+											<defs>
+												<linearGradient
+													id="paint0_linear"
+													x1="86"
+													y1="0"
+													x2="86"
+													y2="172"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#3056D3" stop-opacity="0.09" />
+													<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="h-full md:w-4/12">
-						<img
-							src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities3.jpg"
-							class="w-full h-full rounded-lg border"
-							alt="" />
+						<div class="w-full">
+							<div
+								class="border-purple-600 dark:border-purple-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-8 dark:text-gray-400 text-gray-500">
+								<span class="text-purple-600 mb-2 block text-lg font-semibold">
+									Business
+								</span>
+								<h2 class="text-[#090E34] dark:text-white mb-2 text-[42px] font-bold">
+									$199
+									<span class="text-base font-medium text-gray-500 dark:text-gray-400">
+										/ year
+									</span>
+								</h2>
+								<p
+									class="mb-5 pb-6 border-b border-[#F2F2F2] dark:border-b-slate-600 text-base">
+									Perfect for using in a personal website or a client project.
+								</p>
+								<div class="mb-5">
+									<p class="mb-1 text-base leading-loose">1 User</p>
+									<p class="mb-1 text-base leading-loose">All UI components</p>
+									<p class="mb-1 text-base leading-loose">Lifetime access</p>
+									<p class="mb-1 text-base leading-loose">Free updates</p>
+									<p class="mb-1 text-base leading-loose">Use on 1 (one) project</p>
+									<p class="mb-1 text-base leading-loose">3 Months support</p>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="text-white bg-purple-600 border-purple-600 block w-full rounded-md border hover:opacity-90 py-2.5 text-center text-base font-semibold transition hover:text-white">
+									Choose Business
+								</a>
+								<div>
+									<span class="absolute right-0 top-7 z-[-1]">
+										<svg
+											width="77"
+											height="172"
+											viewBox="0 0 77 172"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+											<defs>
+												<linearGradient
+													id="paint0_linear"
+													x1="86"
+													y1="0"
+													x2="86"
+													y2="172"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#3056D3" stop-opacity="0.09" />
+													<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</span>
+									<span class="absolute right-4 top-4 z-[-1]">
+										<svg
+											width="41"
+											height="89"
+											viewBox="0 0 41 89"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle
+												cx="38.9138"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 38.9138 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 38.9138 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 38.9138 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 38.9138 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 38.9138 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 38.9138 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 38.9138 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="1.42021"
+												r="1.42021"
+												transform="rotate(180 38.9138 1.42021)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 26.4157 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 26.4157 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 26.4157 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 26.4157 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 26.4157 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 26.4157 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 26.4157 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 26.4157 1.4202)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 13.9177 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 13.9177 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 13.9177 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 13.9177 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 13.9177 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 13.9177 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 13.9177 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="1.42019"
+												r="1.42021"
+												transform="rotate(180 13.9177 1.42019)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 1.41963 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 1.41963 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 1.41963 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 1.41963 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 1.41963 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 1.41963 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 1.41963 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 1.41963 1.4202)"
+												fill="#3056D3" />
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="w-full">
+							<div
+								class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-8 dark:text-gray-400 text-gray-500">
+								<span class="text-purple-600 mb-2 block text-lg font-semibold">
+									Professional
+								</span>
+								<h2 class="text-[#090E34] dark:text-white mb-2 text-[42px] font-bold">
+									$256
+									<span class="text-base font-medium text-gray-500 dark:text-gray-400">
+										/ year
+									</span>
+								</h2>
+								<p
+									class="mb-5 pb-6 border-b border-[#F2F2F2] dark:border-b-slate-600 text-base">
+									Perfect for using in a personal website or a client project.
+								</p>
+								<div class="mb-5">
+									<p class="mb-1 text-base leading-loose">1 User</p>
+									<p class="mb-1 text-base leading-loose">All UI components</p>
+									<p class="mb-1 text-base leading-loose">Lifetime access</p>
+									<p class="mb-1 text-base leading-loose">Free updates</p>
+									<p class="mb-1 text-base leading-loose">Use on 1 (one) project</p>
+									<p class="mb-1 text-base leading-loose">3 Months support</p>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="text-purple-600 hover:bg-purple-600 hover:border-purple-600 dark:hover:border-purple-600 block w-full rounded-md border border-[#D4DEFF] dark:border-slate-600 bg-transparent py-2.5 text-center text-base font-semibold transition hover:text-white">
+									Choose Professional
+								</a>
+								<div>
+									<span class="absolute right-0 top-7 z-[-1]">
+										<svg
+											width="77"
+											height="172"
+											viewBox="0 0 77 172"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+											<defs>
+												<linearGradient
+													id="paint0_linear"
+													x1="86"
+													y1="0"
+													x2="86"
+													y2="172"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#3056D3" stop-opacity="0.09" />
+													<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</span>
+									<span class="absolute right-4 top-4 z-[-1]">
+										<svg
+											width="41"
+											height="89"
+											viewBox="0 0 41 89"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle
+												cx="38.9138"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 38.9138 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 38.9138 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 38.9138 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 38.9138 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 38.9138 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 38.9138 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 38.9138 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="1.42021"
+												r="1.42021"
+												transform="rotate(180 38.9138 1.42021)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 26.4157 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 26.4157 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 26.4157 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 26.4157 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 26.4157 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 26.4157 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 26.4157 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 26.4157 1.4202)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 13.9177 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 13.9177 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 13.9177 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 13.9177 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 13.9177 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 13.9177 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 13.9177 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="1.42019"
+												r="1.42021"
+												transform="rotate(180 13.9177 1.42019)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 1.41963 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 1.41963 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 1.41963 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 1.41963 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 1.41963 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 1.41963 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 1.41963 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 1.41963 1.4202)"
+												fill="#3056D3" />
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="w-full">
+							<div
+								class="border-purple-600 dark:border-slate-600 shadow-lg shadow-slate-600/10 dark:shadow-none relative z-10 mb-10 overflow-hidden rounded-lg border border-opacity-20 bg-white dark:bg-gray-800 p-8 dark:text-gray-400 text-gray-500">
+								<span class="text-purple-600 mb-2 block text-lg font-semibold">
+									Professional
+								</span>
+								<h2 class="text-[#090E34] dark:text-white mb-2 text-[42px] font-bold">
+									$256
+									<span class="text-base font-medium text-gray-500 dark:text-gray-400">
+										/ year
+									</span>
+								</h2>
+								<p
+									class="mb-5 pb-6 border-b border-[#F2F2F2] dark:border-b-slate-600 text-base">
+									Perfect for using in a personal website or a client project.
+								</p>
+								<div class="mb-5">
+									<p class="mb-1 text-base leading-loose">1 User</p>
+									<p class="mb-1 text-base leading-loose">All UI components</p>
+									<p class="mb-1 text-base leading-loose">Lifetime access</p>
+									<p class="mb-1 text-base leading-loose">Free updates</p>
+									<p class="mb-1 text-base leading-loose">Use on 1 (one) project</p>
+									<p class="mb-1 text-base leading-loose">3 Months support</p>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="text-purple-600 hover:bg-purple-600 hover:border-purple-600 dark:hover:border-purple-600 block w-full rounded-md border border-[#D4DEFF] dark:border-slate-600 bg-transparent py-2.5 text-center text-base font-semibold transition hover:text-white">
+									Choose Professional
+								</a>
+								<div>
+									<span class="absolute right-0 top-7 z-[-1]">
+										<svg
+											width="77"
+											height="172"
+											viewBox="0 0 77 172"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+											<defs>
+												<linearGradient
+													id="paint0_linear"
+													x1="86"
+													y1="0"
+													x2="86"
+													y2="172"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#3056D3" stop-opacity="0.09" />
+													<stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</span>
+									<span class="absolute right-4 top-4 z-[-1]">
+										<svg
+											width="41"
+											height="89"
+											viewBox="0 0 41 89"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle
+												cx="38.9138"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 38.9138 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 38.9138 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 38.9138 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 38.9138 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 38.9138 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 38.9138 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 38.9138 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="38.9138"
+												cy="1.42021"
+												r="1.42021"
+												transform="rotate(180 38.9138 1.42021)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 26.4157 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 26.4157 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 26.4157 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 26.4157 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 26.4157 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 26.4157 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 26.4157 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="26.4157"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 26.4157 1.4202)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 13.9177 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 13.9177 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 13.9177 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 13.9177 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 13.9177 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 13.9177 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 13.9177 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="13.9177"
+												cy="1.42019"
+												r="1.42021"
+												transform="rotate(180 13.9177 1.42019)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="87.4849"
+												r="1.42021"
+												transform="rotate(180 1.41963 87.4849)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="74.9871"
+												r="1.42021"
+												transform="rotate(180 1.41963 74.9871)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="62.4892"
+												r="1.42021"
+												transform="rotate(180 1.41963 62.4892)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="38.3457"
+												r="1.42021"
+												transform="rotate(180 1.41963 38.3457)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="13.634"
+												r="1.42021"
+												transform="rotate(180 1.41963 13.634)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="50.2754"
+												r="1.42021"
+												transform="rotate(180 1.41963 50.2754)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="26.1319"
+												r="1.42021"
+												transform="rotate(180 1.41963 26.1319)"
+												fill="#3056D3" />
+											<circle
+												cx="1.41963"
+												cy="1.4202"
+												r="1.42021"
+												transform="rotate(180 1.41963 1.4202)"
+												fill="#3056D3" />
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<!-- homemaker services -->
-				<div class="flex flex-col-reverse lg:flex-row-reverse items-center gap-10">
-					<div class="lg:w-8/12">
-						<h2 class="text-lg text-blue-600 font-semibold font-inter">HOMEMAKER SERVICES</h2>
-						<h3
-							class="text-2xl mt-1 mb-2 font-inter font-semibold tracking-wide text-slate-800 dark:text-white">
-							WE ASSIST WITH HOUSEHOLD ACTIVITIES AND OTHER CHORES
-						</h3>
-						<p class="font-roboto tracking-wide text-gray-600 dark:text-gray-400">
-							Homemaking services ensure a client is assisted with general household duties
-							such as housekeeping, laundry, and more. We care about the safety and
-							cleanliness of your home, and our well-trained staff will help you to achieve
-							it. Despite declining health issues, we believe that you deserve to continue
-							living life with a smile on your face. Some services to guarantee a comfortable
-							and easy lifestyle are as followed.
-						</p>
-						<div class="mt-3">
-							<h4
-								class="text-lg font-semibold tracking-wide mb-1 text-slate-800 font-inter uppercase dark:text-white">
-								This service includes
-							</h4>
-							<ul class="grid sm:grid-cols-2 xl:grid-cols-1 gap-x-4 xl:gap-x-0">
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"> Housekeeping</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"
-										>Safety and Welfare Checks</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Handyman Services (As Needed)</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">Laundry and Ironing</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"> Window Washing</span>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Wall and oven cleaning</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400">
-										Bed Making and Sheet Changing</span
-									>
-								</li>
-								<li class="flex items-center gap-2">
-									<span
-										class="w-4 h-4 inline-flex items-center justify-center rounded-full bg-green-600 text-white text-[10px]"
-										><i class="fa-solid fa-check"></i
-									></span>
-									<span class="text-gray-600 dark:text-gray-400"> And more</span>
-								</li>
-							</ul>
-						</div>
-						<div class="mt-2">
-							<p class="mb-2 text-gray-600 dark:text-gray-400">
-								For more information about our homemaker services service, please
-								<span class="">contact us</span> or
-								<span class="">set an appointment</span>
-							</p>
-							<div class="flex items-center gap-2">
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md"
-									>Contact Us</a
-								>
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md">
-									Set an Appointment</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="h-full md:w-4/12">
-						<img
-							src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities5.jpg"
-							class="w-full h-full rounded-lg border"
-							alt="" />
+			</section>
+			<!-- gallery section -->
+			<section>
+				<div class="text-center mb-8">
+					<div class="font-semibold font-inter">
+						<h4 class="text-lg text-purple-600">LET'S GET STARTED</h4>
+						<h2 class="text-3xl text-slate-800 dark:text-white">AN OPPORTUNITY TO CARE</h2>
 					</div>
 				</div>
-				<!-- respite care -->
-				<div class="flex flex-col-reverse lg:flex-row items-center gap-10">
-					<div class="lg:w-8/12">
-						<h2 class="text-lg text-blue-600 font-semibold font-inter">RESPITE CARE</h2>
-						<h3
-							class="text-2xl mt-1 mb-2 font-inter font-semibold tracking-wide text-slate-800 dark:text-white">
-							WE TAKE OVER YOUR CAREGIVING DUTIES <br />
-							WHILE YOU TAKE A BREAK.
-						</h3>
-						<p class="font-roboto tracking-wide text-gray-600 dark:text-gray-400">
-							As a full-time caregiver, it is also important that you take care of your own
-							well-being. Leaving yourself worn out and stressed over your various duties and
-							responsibilities can lead to serious health problems. Galaxy Home Care provides
-							you with the opportunity to take a break, so you can recharge and spend time
-							with your family. Our respite care service gives you a peace of mind knowing
-							that your patient is being looked after by experienced and attentive
-							caregivers.
-						</p>
-						<div class="mt-2">
-							<p class="mb-2 text-gray-600 dark:text-gray-400">
-								For more information about our respite care service, please
-								<span class="">contact us</span> or
-								<span class="">set an appointment</span>
-							</p>
-							<div class="flex items-center gap-2">
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md"
-									>Contact Us</a
-								>
-								<a
-									class="inline-block bg-slate-800 dark:bg-blue-600 text-white px-4 py-2.5 font-inter text-sm rounded-md">
-									Set an Appointment</a
-								>
+				<div class="space-y-4">
+					<div class="grid lg:grid-cols-2 gap-4 overflow-hidden">
+						<div class="w-full overflow-hidden rounded-lg">
+							<img
+								alt="gallery"
+								class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+								src="https://dummyimage.com/600x360" />
+						</div>
+						<div class="grid grid-cols-2 h-full gap-4 mb-4">
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
 							</div>
 						</div>
 					</div>
-					<div class="h-full md:w-4/12">
-						<img
-							src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities4.jpg"
-							class="w-full h-full rounded-lg border"
-							alt="" />
+					<div class="grid lg:grid-cols-2 gap-4">
+						<div class="grid grid-cols-2 h-full gap-4 mb-4">
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+							<div class="overflow-hidden rounded-lg">
+								<img
+									alt="gallery"
+									class="w-full object-cover h-full object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+									src="https://dummyimage.com/500x300" />
+							</div>
+						</div>
+						<div class="w-full overflow-hidden rounded-lg">
+							<img
+								alt="gallery"
+								class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 duration-500 transition-all ease-in-out"
+								src="https://dummyimage.com/600x360" />
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- hiring section -->
-			<section class="my-20">
-				<div class="container px-6 xl:px-16 2xl:px-0">
-					<div
-						class="bg-slate-800 rounded-lg relative z-10 overflow-hidden px-5 py-6 md:px-10  md:py-12">
-						<div class="flex items-center flex-col md:flex-row justify-between gap-5">
-							<div class=" w-full text-center md:text-left">
-								<span class="mb-2 text-base font-semibold text-white">
-									Providing 24 Hours Phone Support
-								</span>
-								<h2
-									class=" text-2xl md:text-3xl font-semibold  font-inter  text-white  ">
-									We are Hiring Caregivers
-								</h2>
-							</div>
-							<div class="flex items-center justify-center md:justify-end gap-4 w-full">
-								<a
-									href="tel:+1 (215) 588-506"
-									class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-md">
-									Call Us Now
-								</a>
-								<a
-									href="mailto:galaxyhomecarellc@gmail.com"
-									class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-md">
-									Send us Email
-								</a>
-							</div>
-						</div>
-						<div>
-							<span class="absolute top-0 left-0 z-[-1]">
-								<svg
-									width="189"
-									height="162"
-									viewBox="0 0 189 162"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<ellipse
-										cx="16"
-										cy="-16.5"
-										rx="173"
-										ry="178.5"
-										transform="rotate(180 16 -16.5)"
-										fill="url(#paint0_linear)" />
-									<defs>
-										<linearGradient
-											id="paint0_linear"
-											x1="-157"
-											y1="-107.754"
-											x2="98.5011"
-											y2="-106.425"
-											gradientUnits="userSpaceOnUse">
-											<stop stop-color="white" stop-opacity="0.07" />
-											<stop offset="1" stop-color="white" stop-opacity="0" />
-										</linearGradient>
-									</defs>
-								</svg>
+			<section>
+				<div
+					class="bg-slate-800 rounded-lg relative z-10 overflow-hidden px-5 py-6 md:px-10 md:py-12">
+					<div class="flex items-center flex-col md:flex-row justify-between gap-5">
+						<div class="w-full text-center md:text-left">
+							<span class="mb-2 text-base font-semibold text-white">
+								Providing 24 Hours Phone Support
 							</span>
-							<span class="absolute bottom-0 right-0 z-[-1]">
-								<svg
-									width="191"
-									height="208"
-									viewBox="0 0 191 208"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<ellipse
-										cx="173"
-										cy="178.5"
-										rx="173"
-										ry="178.5"
-										fill="url(#paint0_linear)" />
-									<defs>
-										<linearGradient
-											id="paint0_linear"
-											x1="-3.27832e-05"
-											y1="87.2457"
-											x2="255.501"
-											y2="88.5747"
-											gradientUnits="userSpaceOnUse">
-											<stop stop-color="white" stop-opacity="0.07" />
-											<stop offset="1" stop-color="white" stop-opacity="0" />
-										</linearGradient>
-									</defs>
-								</svg>
-							</span>
+							<h2 class="text-2xl md:text-3xl font-semibold font-inter text-white">
+								We are Hiring Caregivers
+							</h2>
 						</div>
+						<div class="flex items-center justify-center md:justify-end gap-4 w-full">
+							<a
+								href="tel:+1 (215) 588-506"
+								class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-md">
+								Call Us Now
+							</a>
+							<a
+								href="mailto:galaxyhomecarellc@gmail.com"
+								class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-md">
+								Send us Email
+							</a>
+						</div>
+					</div>
+					<div>
+						<span class="absolute top-0 left-0 z-[-1]">
+							<svg
+								width="189"
+								height="162"
+								viewBox="0 0 189 162"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<ellipse
+									cx="16"
+									cy="-16.5"
+									rx="173"
+									ry="178.5"
+									transform="rotate(180 16 -16.5)"
+									fill="url(#paint0_linear)" />
+								<defs>
+									<linearGradient
+										id="paint0_linear"
+										x1="-157"
+										y1="-107.754"
+										x2="98.5011"
+										y2="-106.425"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" stop-opacity="0.07" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</span>
+						<span class="absolute bottom-0 right-0 z-[-1]">
+							<svg
+								width="191"
+								height="208"
+								viewBox="0 0 191 208"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<ellipse
+									cx="173"
+									cy="178.5"
+									rx="173"
+									ry="178.5"
+									fill="url(#paint0_linear)" />
+								<defs>
+									<linearGradient
+										id="paint0_linear"
+										x1="-3.27832e-05"
+										y1="87.2457"
+										x2="255.501"
+										y2="88.5747"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" stop-opacity="0.07" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</span>
 					</div>
 				</div>
 			</section>
 			<!-- opportunity section -->
-			<section class="container px-6 xl:px-16 2xl:px-0 mb-20">
+			<section>
 				<div class="mb-8">
 					<div class="font-semibold font-inter">
 						<h4 class="text-lg text-blue-600">LET'S GET STARTED</h4>
@@ -742,7 +1528,7 @@
 							class="bg-[url('https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/1-1.jpg')] w-full h-60 bg-no-repeat bg-blend-darken bg-slate-500/40 bg-cover p-4 flex flex-col justify-end gap-3 rounded-lg">
 							<div>
 								<button
-									class="bg-gray-800 border border-gray-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
+									class="bg-gray-800 border border-slate-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
 									<i class="fa-solid fa-message text-sm"></i> Meet Our Caregivers
 								</button>
 							</div>
@@ -753,7 +1539,7 @@
 							class="bg-[url('https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/2.jpg')] w-full h-60 bg-no-repeat bg-blend-darken bg-slate-500/40 bg-cover p-4 flex flex-col justify-end gap-3 rounded-lg">
 							<div>
 								<button
-									class="bg-gray-800 border border-gray-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
+									class="bg-gray-800 border border-slate-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
 									<i class="fa-solid fa-share text-sm"></i> Send Your Referrals
 								</button>
 							</div>
@@ -764,7 +1550,7 @@
 							class="bg-[url('https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/3-1.jpg')] w-full h-60 bg-no-repeat bg-blend-darken bg-slate-500/40 bg-cover p-4 flex flex-col justify-end gap-3 rounded-lg">
 							<div>
 								<button
-									class="bg-gray-800 border border-gray-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
+									class="bg-gray-800 border border-slate-600 text-white px-5 py-2 rounded-md inline-flex items-center gap-2">
 									<i class="fa-solid fa-clipboard-list text-sm"></i> Set an Appointment
 								</button>
 							</div>
@@ -775,7 +1561,7 @@
 		</main>
 
 		<footer>
-			<div class="bg-slate-900">
+			<div class="bg-slate-900 border-t border-transparent dark:border-slate-700">
 				<div class="px-6 xl:px-16 2xl:px-0 pt-16 container">
 					<div class="grid row-gap-10 mb-8 lg:grid-cols-6">
 						<div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-3">
