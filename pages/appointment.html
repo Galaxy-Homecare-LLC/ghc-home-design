@@ -6,8 +6,6 @@
 		<link href="../asset/css/app.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../asset/css/style.css" />
 		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-		<!-- flatpicker -->
-		<!-- <link rel="stylesheet" href="../asset/src/flatpickr.min.css"> -->
 		<link
 			id="flatPicker"
 			rel="stylesheet"
@@ -22,96 +20,164 @@
 	</head>
 
 	<body class="font-roboto">
-		<header
-			class="sticky top-0 z-10 dark:bg-slate-900 bg-slate-50 border-b dark:border-slate-600">
-			<nav
-				class="h-16 relative px-6 xl:px-16 2xl:px-0 container dark:bg-slate-900 bg-slate-50 lg:flex lg:items-center lg:justify-between">
-				<div class="flex justify-between h-full items-center">
-					<!-- <span class="text-2xl  font-semibold font-inter cursor-pointer">
-
-            LOGO HERE
-          </span> -->
-					<img class="w-36 lg:w-44" src="../asset/img/logo-light.png" alt="" />
-
-					<span
-						class="text-3xl text-slate-900 dark:text-white cursor-pointer inline-flex items-center lg:hidden">
-						<i onclick="Menu(this)" class="uil uil-bars"></i>
-					</span>
-				</div>
-
+		<header class="pt-[64px]">
+			<nav id="navbar" class="fixed left-0 right-0 top-0 z-20 dark:bg-primary bg-slate-50">
 				<div
-					id="navigation"
-					class="z-[-100] lg:z-auto lg:static absolute w-full left-0 right-0 lg:w-auto opacity-60 lg:opacity-100 max-w-none top-[-380px] transition-all ease-in duration-500">
-					<ul
-						class="flex flex-col bg-slate-50 dark:bg-slate-900 dark:text-gray-200 lg:flex-row lg:items-center gap-3 lg:gap-5 px-4 lg:px-0 w-full sm:max-w-[640px] md:max-w-3xl lg:py-0 py-4 mx-auto lg:mx-0">
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="./appointment.html">Appointment</a></li>
-						<li><a href="./career.html">Career</a></li>
-						<li><a href="./gallery.html">Gallery</a></li>
-						<li><a href="./resources.html">Resource</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li
-							class="inline-flex flex-row-reverse lg:flex-row justify-end lg:justify-start items-center gap-5">
-							<button
-								id="theme-toggle"
-								type="button"
-								class="text-gray-500 focus:outline-none text-sm">
-								<svg
-									id="theme-toggle-dark-icon"
-									class="hidden w-5 h-5"
-									fill="currentColor"
-									viewBox="0 0 20 20"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-								</svg>
-								<svg
-									id="theme-toggle-light-icon"
-									class="hidden w-5 h-5"
-									fill="currentColor"
-									viewBox="0 0 20 20"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-										fill-rule="evenodd"
-										clip-rule="evenodd"></path>
-								</svg>
-							</button>
-
-							<button
-								class="primary-color text-white h-8 px-5 w-full lg:w-auto duration-500 rounded">
-								Login
-							</button>
-						</li>
-					</ul>
+					class="container px-6 xl:px-16 2xl:px-0 h-16 relative dark:bg-primary bg-slate-50 lg:flex lg:items-center lg:justify-between">
+					<div class="flex justify-between h-full items-center">
+						<div class="min-h-full w-[176px] flex items-center overflow-hidden">
+							<img
+								id="logo-light"
+								class="w-36 lg:w-44"
+								src="../asset/img/logo-light.png"
+								alt="" />
+							<img
+								id="logo-dark"
+								class="w-36 lg:w-44 relative -top-1"
+								src="../asset/img/logo-dark.png"
+								alt="" />
+						</div>
+						<span
+							class="text-3xl text-slate-900 dark:text-white cursor-pointer inline-flex items-center lg:hidden">
+							<i onclick="Menu(this)" class="uil uil-bars"></i>
+						</span>
+					</div>
+					<div>
+						<div
+							id="navigation"
+							class="z-[-100] lg:min-w-[701.06px] lg:z-auto lg:static absolute left-0 right-0 lg:w-auto lg:opacity-100 top-[-380px] transition-all ease-in duration-500">
+							<ul
+								class="flex flex-col bg-slate-50 dark:bg-primary dark:text-gray-200 lg:flex-row lg:items-center gap-3 lg:gap-4 text-sm tracking-wide px-6 lg:px-0 w-full lg:py-0 py-4 mx-auto lg:mx-0">
+								<li><a href="./index.html">Home</a></li>
+								<li><a href="./index.html">Services</a></li>
+								<li><a href="./index.html">Pricing</a></li>
+								<li><a href="./pages/appointment.html">Appointment</a></li>
+								<li><a href="./pages/career.html">Career</a></li>
+								<li><a href="./pages/gallery.html">Gallery</a></li>
+								<li><a href="./pages/resources.html">Resource</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+								<li
+									class="flex flex-row-reverse lg:flex-row justify-end lg:justify-start items-center gap-5">
+									<button
+										id="theme-toggle"
+										type="button"
+										class="text-gray-500 focus:outline-none text-sm min-w-[20px]">
+										<svg
+											id="theme-toggle-dark-icon"
+											class="hidden w-5 h-5"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+										</svg>
+										<svg
+											id="theme-toggle-light-icon"
+											class="hidden w-5 h-5"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+												fill-rule="evenodd"
+												clip-rule="evenodd"></path>
+										</svg>
+									</button>
+									<button
+										class="primary-color min-w-[79.42px] text-white h-8 px-5 w-full lg:w-auto duration-500 rounded">
+										Login
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</header>
-		<main class="dark:bg-[#15202B] py-16 bg-slate-50">
-			<section class="container px-6 xl:px-16 2xl:px-0">
-				<div class="flex items-center bg-white dark:bg-slate-900 rounded-xl shadow">
-					<div class="h-full flex-shrink-0 hidden 2xl:block w-5/12">
-						<img
-							src="../asset/img/book-appoinment.png"
-							alt=""
-							class="h-full rounded-l-xl appointment-form" />
-					</div>
-					<form action="" class="h-full w-full">
-						<div class="p-5 md:p-10 2xl:px-10 2xl:py-0">
-							<div class="mb-8">
-								<h1 class="text-2xl text-slate-500 dark:text-white font-medium">
-									Set an Appointment
-								</h1>
-								<p class="text-sm mt-1 dark:text-gray-400 text-slate-800">
-									Are you an individual who is interested providing in care seniors people
-									in need of assistance? If so, we highly encourage you to join our team.
-									You can apply by filling out the form provided with the necessary
-									details.
-								</p>
-								<p class="h-1 bg-slate-500 w-44 mt-2 rounded-full"></p>
-							</div>
 
+		<main class="dark:bg-gray-900 pb-20 bg-slate-50">
+			<section class="py-10 lg:py-16">
+				<div
+					class="container px-6 xl:px-16 2xl:px-0 h-full flex items-center justify-between min-h-[203px]">
+					<div>
+						<div class="w-full">
+							<h1
+								class="text-3xl sm:text-4xl font-bold font-inter tracking-wide gradient-text">
+								Appointment
+							</h1>
+							<p
+								class="font-light text-base tracking-wide text-slate-800 dark:text-gray-400 mt-2">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, aliquid!
+							</p>
+						</div>
+						<nav class="hidden lg:block">
+							<ol
+								class="inline-flex items-center space-x-1 md:space-x-3 bg-white text-gray-700 border border-gray-200 py-2 px-5 mt-6 rounded-lg dark:bg-primary dark:border-gray-700">
+								<li class="inline-flex items-center">
+									<a
+										href="#"
+										class="text-sm text-gray-700 hover:text-gray-900 inline-flex items-center dark:text-gray-400 dark:hover:text-white">
+										<svg
+											class="w-4 h-4 mr-2"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+										</svg>
+										Home
+									</a>
+								</li>
+								<li>
+									<div class="flex items-center">
+										<svg
+											class="w-6 h-6 text-gray-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												fill-rule="evenodd"
+												d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<a
+											href="#"
+											class="text-gray-700 hover:text-gray-900 ml-1 md:ml-2 text-sm font-medium dark:text-gray-400 dark:hover:text-white"
+											>Templates</a
+										>
+									</div>
+								</li>
+								<li aria-current="page">
+									<div class="flex items-center">
+										<svg
+											class="w-6 h-6 text-gray-400"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												fill-rule="evenodd"
+												d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<span
+											class="text-gray-400 ml-1 md:ml-2 text-sm font-medium dark:text-gray-500"
+											>Theme</span
+										>
+									</div>
+								</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="hidden lg:block">
+						<img class="w-60" src="../asset/img/icon/resources.svg" alt="" />
+					</div>
+				</div>
+			</section>
+			<section class="container px-6 xl:px-16 2xl:px-0">
+				<div class="flex items-start bg-white dark:bg-gray-800 rounded-lg shadow">
+					<form action="" class="h-full w-full">
+						<div class="p-5 md:p-10">
 							<div class="grid md:grid-cols-2 gap-x-5 gap-y-4 pb-5 w-full">
 								<!-- first name -->
 								<div class="w-full">
@@ -232,7 +298,6 @@
 										type="tel"
 										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5" />
 								</div>
-
 								<!-- phone -->
 								<div class="w-full">
 									<div class="mb-1">
@@ -258,7 +323,7 @@
 									<select
 										name=""
 										id=""
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5">
+										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
 										<option disabled selected>Please select</option>
 										<option value="anytime">Anytime</option>
 										<option value="morning_at_home">Morning at Home</option>
@@ -269,7 +334,6 @@
 										<option value="evening_at_work">Evening at Work</option>
 									</select>
 								</div>
-
 								<!-- preferred  date-->
 								<div class="w-full">
 									<div class="mb-1">
@@ -283,7 +347,6 @@
 										type="text"
 										class="datePicker border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5" />
 								</div>
-
 								<!-- preferred  time-->
 								<div class="w-full">
 									<div class="mb-1">
@@ -298,7 +361,6 @@
 										class="timePicker border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5" />
 								</div>
 							</div>
-
 							<div class="mt-4">
 								<label
 									for="message"
@@ -330,6 +392,45 @@
 							</button>
 						</div>
 					</form>
+					<div class="h-full pt-[68px] pr-10 flex-shrink-0 hidden lg:block w-4/12">
+						<div class="">
+							<h1
+								class="text-2xl text-slate-800 dark:text-white font-semibold tracking-wide">
+								Set an Appointment
+							</h1>
+							<p class="text-sm tracking-wide mt-1 dark:text-gray-400 text-gray-500">
+								Are you an individual who is interested providing in care seniors people in
+								need of assistance? If so, we highly encourage you to join our team. You can
+								apply by filling out the form provided with the necessary details.
+							</p>
+						</div>
+						<div class="mt-10">
+							<a href="#">
+								<h5
+									class="mb-2 text-2xl font-semibold tracking-wide text-slate-800 dark:text-white">
+									Need a help?
+								</h5>
+							</a>
+							<p
+								class="mb-2 text-sm tracking-wide font-normal text-gray-500 dark:text-gray-400">
+								Go to this step by step guideline process on how to certify for your weekly
+								benefits:
+							</p>
+							<a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+								See our guideline
+								<svg
+									class="w-5 h-5 ml-2"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+									<path
+										d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -491,23 +592,10 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-			function Menu(e) {
-				let list = document.querySelector("#navigation");
-				e.name === "menu"
-					? ((e.name = "close"),
-					  list.classList.add("top-[60px]"),
-					  list.classList.add("opacity-100"))
-					: ((e.name = "menu"),
-					  list.classList.remove("top-[60px]"),
-					  list.classList.remove("opacity-100"));
-			}
-		</script>
 		<script src="../asset/js/darkToggler.js"></script>
 		<script src="../asset/js/flatpickr.js"></script>
 		<script>
 			$(".datePicker").flatpickr({ enableTime: false, dateFormat: "Y-m-d" });
-
 			$(".timePicker").flatpickr({ enableTime: true, noCalendar: true, dateFormat: "H:i" });
 		</script>
 	</body>
