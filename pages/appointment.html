@@ -16,7 +16,19 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
 		<title>Appointment-Galaxy Home Care</title>
+		<style>
+			select {
+				background-size: 0px 0px, 0px 0px, 0em 0em;
+				background-repeat: no-repeat;
+			}
+		</style>
 	</head>
 
 	<body class="font-roboto">
@@ -95,7 +107,6 @@
 				</div>
 			</nav>
 		</header>
-
 		<main class="dark:bg-gray-900 pb-20 bg-slate-50">
 			<section class="py-10 lg:py-16">
 				<div
@@ -205,73 +216,6 @@
 										type="text"
 										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm" />
 								</div>
-								<!-- address -->
-								<div class="w-full">
-									<div class="mb-1">
-										<label
-											for="address"
-											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
-											>Address<span class="text-red-600">*</span>
-										</label>
-									</div>
-									<input
-										type="email"
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm" />
-								</div>
-								<!-- city -->
-								<div class="w-full">
-									<div class="mb-1">
-										<label
-											for="city"
-											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
-											>City<span class="text-red-600">*</span>
-										</label>
-									</div>
-									<select
-										name=""
-										id=""
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
-										<option disabled selected>Please select</option>
-										<option value="anytime">Anytime</option>
-										<option value="new_york">New York</option>
-									</select>
-								</div>
-								<!-- state -->
-								<div class="w-full">
-									<div class="mb-1">
-										<label
-											for="state"
-											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
-											>State<span class="text-red-600">*</span>
-										</label>
-									</div>
-									<select
-										name=""
-										id=""
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
-										<option disabled selected>Please select</option>
-										<option value="anytime">Anytime</option>
-										<option value="new_york">New York</option>
-									</select>
-								</div>
-								<!-- zip -->
-								<div class="w-full">
-									<div class="mb-1">
-										<label
-											for="zip"
-											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
-											>ZIP<span class="text-red-600">*</span>
-										</label>
-									</div>
-									<select
-										name=""
-										id=""
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
-										<option disabled selected>Please select</option>
-										<option value="anytime">Anytime</option>
-										<option value="new_york">New York</option>
-									</select>
-								</div>
 								<!-- email address -->
 								<div class="w-full">
 									<div class="mb-1">
@@ -311,6 +255,88 @@
 										type="tel"
 										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5" />
 								</div>
+								<!-- address -->
+								<div class="w-full">
+									<div class="mb-1">
+										<label
+											for="address"
+											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
+											>Address<span class="text-red-600">*</span>
+										</label>
+									</div>
+									<input
+										type="email"
+										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm" />
+								</div>
+								<!-- city -->
+								<div class="w-full select-wrapper">
+									<div class="mb-1">
+										<label
+											for="city"
+											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
+											>City<span class="text-red-600">*</span>
+										</label>
+									</div>
+									<div class="relative">
+										<select
+											name=""
+											id=""
+											class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
+											<option disabled selected>Please select</option>
+											<option value="anytime">Anytime</option>
+											<option value="new_york">New York</option>
+										</select>
+										<span class="absolute right-3 bottom-2 text-gray-400"
+											><i class="fa-solid fa-sort"></i
+										></span>
+									</div>
+								</div>
+								<!-- state -->
+								<div class="w-full">
+									<div class="mb-1">
+										<label
+											for="state"
+											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
+											>State<span class="text-red-600">*</span>
+										</label>
+									</div>
+									<div class="relative">
+										<select
+											name=""
+											id=""
+											class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
+											<option disabled selected>Please select</option>
+											<option value="anytime">Anytime</option>
+											<option value="new_york">New York</option>
+										</select>
+										<span class="absolute right-3 bottom-2 text-gray-400"
+											><i class="fa-solid fa-sort"></i
+										></span>
+									</div>
+								</div>
+								<!-- zip -->
+								<div class="w-full">
+									<div class="mb-1">
+										<label
+											for="zip"
+											class="text-slate-800 dark:text-white tracking-wide font-inter text-sm font-medium"
+											>ZIP<span class="text-red-600">*</span>
+										</label>
+									</div>
+									<div class="relative">
+										<select
+											name=""
+											id=""
+											class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
+											<option disabled selected>Please select</option>
+											<option value="anytime">Anytime</option>
+											<option value="new_york">New York</option></select
+										><span class="absolute right-3 bottom-2 text-gray-400"
+											><i class="fa-solid fa-sort"></i
+										></span>
+									</div>
+								</div>
+
 								<!-- best time  to call -->
 								<div class="w-full">
 									<div class="mb-1">
@@ -320,19 +346,23 @@
 											>Best Time to Call<span class="text-red-600">*</span>
 										</label>
 									</div>
-									<select
-										name=""
-										id=""
-										class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
-										<option disabled selected>Please select</option>
-										<option value="anytime">Anytime</option>
-										<option value="morning_at_home">Morning at Home</option>
-										<option value="morning_at_work">Morning at Work</option>
-										<option value="afternoon_at_home">Afternoon at Home</option>
-										<option value="afternoon_at_work">Afternoon at Work</option>
-										<option value="evening_at_home">Evening at Home</option>
-										<option value="evening_at_work">Evening at Work</option>
-									</select>
+									<div class="relative">
+										<select
+											name=""
+											id=""
+											class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-blue-500 dark:focus:border-blue-600 focus:ring-blue-500 w-full dark:focus:ring-blue-600 rounded-md shadow-sm text-sm py-2.5 text-gray-500">
+											<option disabled selected>Please select</option>
+											<option value="anytime">Anytime</option>
+											<option value="morning_at_home">Morning at Home</option>
+											<option value="morning_at_work">Morning at Work</option>
+											<option value="afternoon_at_home">Afternoon at Home</option>
+											<option value="afternoon_at_work">Afternoon at Work</option>
+											<option value="evening_at_home">Evening at Home</option>
+											<option value="evening_at_work">Evening at Work</option></select
+										><span class="absolute right-3 bottom-2 text-gray-400"
+											><i class="fa-solid fa-sort"></i
+										></span>
+									</div>
 								</div>
 								<!-- preferred  date-->
 								<div class="w-full">

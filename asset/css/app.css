@@ -1024,6 +1024,30 @@ select{
   left: -0.75rem;
 }
 
+.right-2{
+  right: 0.5rem;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
+.bottom-3{
+  bottom: 0.75rem;
+}
+
+.bottom-2{
+  bottom: 0.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -1203,10 +1227,6 @@ select{
 
 .mb-14{
   margin-bottom: 3.5rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
 }
 
 .mb-16{
@@ -1499,6 +1519,10 @@ select{
 
 .max-w-\[1340px\]{
   max-width: 1340px;
+}
+
+.max-w-xs{
+  max-width: 20rem;
 }
 
 .max-w-sm{
@@ -2141,6 +2165,12 @@ select{
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
