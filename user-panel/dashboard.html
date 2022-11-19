@@ -1,234 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../asset/css/app.css" />
-		<link rel="stylesheet" href="../asset/src/user-panel.css" />
-		<title>user-panel</title>
-	</head>
-	<body>
-		<div class="relative min-h-screen md:flex" data-dev-hint="container">
-			<input type="checkbox" id="menu-open" class="hidden" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/app.css" />
+    <link rel="stylesheet" href="../asset/src/user-panel.css" />
+    <title>user-panel</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+      integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="font-roboto">
+    <div class="relative min-h-screen md:flex" data-dev-hint="container">
+      <input type="checkbox" id="menu-open" class="hidden" />
 
-			<header
-				class="bg-slate-900 text-gray-100 flex justify-between md:hidden"
-				data-dev-hint="mobile menu bar">
-				<a href="#" class="block p-4">
-					<img src="../asset/img/logo-light.png" class="h-7" alt="" />
-				</a>
+      <header
+        class="flex justify-between bg-slate-900 text-gray-100 md:hidden"
+        data-dev-hint="mobile menu bar"
+      >
+        <a href="#" class="inline-flex items-center pl-4">
+          <img src="../asset/img/brand-light.svg" class="w-32" alt="" />
+        </a>
 
-				<label
-					for="menu-open"
-					id="mobile-menu-button"
-					class="m-2 p-2 inline-flex items-center focus:outline-none hover:text-white hover:bg-gray-700 rounded-md">
-					<svg
-						id="menu-open-icon"
-						class="h-6 w-6 transition duration-200 ease-in-out"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor">
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
-					<svg
-						id="menu-close-icon"
-						class="h-6 w-6 transition duration-200 ease-in-out"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor">
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M6 18L18 6M6 6l12 12" />
-					</svg>
-				</label>
-			</header>
+        <label
+          for="menu-open"
+          id="mobile-menu-button"
+          class="m-2 inline-flex items-center rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none"
+        >
+          <svg
+            id="menu-open-icon"
+            class="h-6 w-6 transition duration-200 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            id="menu-close-icon"
+            class="h-6 w-6 transition duration-200 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </label>
+      </header>
 
-			<aside
-				id="sidebar"
-				class="bg-slate-900 text-gray-100 w-64 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out flex flex-col justify-between overflow-y-auto border-r border-slate-700">
-				<div class="flex flex-col space-y-6">
-					<a
-						href="#"
-						class="text-white flex items-center space-x-2 pl-5"
-						title="Your App is cool">
-						<img src="../asset/img/logo-light.png" class="h-7" alt="" />
-					</a>
+      <aside
+        id="sidebar"
+        class="absolute inset-y-0 left-0 flex w-60 transform flex-col justify-between space-y-6 overflow-y-auto border-r border-slate-700 bg-[#051E34] bg-[url(https://www.gstatic.com/mobilesdk/190424_mobilesdk/nav_nachos@2x.png)] bg-contain bg-center bg-no-repeat px-0 pt-6 text-gray-100 transition duration-200 ease-in-out md:relative md:translate-x-0"
+      >
+        <div class="flex flex-col space-y-6">
+          <a
+            href="#"
+            class="flex items-center space-x-2 pl-5 text-white"
+            title="Your App is cool"
+          >
+            <img src="../asset/img/brand-light.svg" class="w-4/6" alt="" />
+          </a>
 
-					<nav data-dev-hint="main navigation" class="px-3">
-						<aside class="" aria-label="Sidebar">
-							<div class="overflow-y-auto">
-								<ul class="space-y-0">
-									<li>
-										<a
-											href="#"
-											class="flex items-center p-2 text-sm font-normal rounded-md text-white hover:bg-slate-800 duration-100">
-											<svg
-												aria-hidden="true"
-												class="w-5 h-5 text-gray-400"
-												fill="currentColor"
-												viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg">
-												<path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-												<path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-											</svg>
-											<span class="ml-3">Dashboard</span>
-										</a>
-									</li>
-									<li>
-										<a
-											class="flex items-center p-2 text-sm font-normal rounded-md text-white hover:bg-slate-800 duration-100"
-											href="#">
-											<svg
-												class="w-5 h-5 text-gray-400"
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor">
-												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="2"
-													d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-											</svg>
-											<span class="ml-3">Insights</span>
-										</a>
-									</li>
-									<li>
-										<a
-											class="flex items-center p-2 text-sm font-normal rounded-md text-white hover:bg-slate-800 duration-100"
-											href="#">
-											<svg
-												class="w-5 h-5 text-gray-400"
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor">
-												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="2"
-													d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-											</svg>
-											<span class="ml-3">Products</span>
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											class="flex items-center p-2 text-sm rounded-md text-white hover:bg-slate-800 duration-100">
-											<svg
-												aria-hidden="true"
-												class="flex-shrink-0 w-5 h-5 text-gray-400"
-												fill="currentColor"
-												viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-											</svg>
-											<span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											class="flex items-center p-2 text-sm rounded-md text-white hover:bg-slate-800 duration-100">
-											<svg
-												aria-hidden="true"
-												class="flex-shrink-0 w-5 h-5 text-gray-400"
-												fill="currentColor"
-												viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
-												<path
-													d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
-											</svg>
-											<span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											class="flex items-center p-2 text-sm rounded-md text-white hover:bg-slate-800 duration-100">
-											<svg
-												aria-hidden="true"
-												class="flex-shrink-0 w-5 h-5 text-gray-400"
-												fill="currentColor"
-												viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													fill-rule="evenodd"
-													d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-													clip-rule="evenodd"></path>
-											</svg>
-											<span class="flex-1 ml-3 whitespace-nowrap">Users</span>
-										</a>
-									</li>
-									<li>
-										<a
-											class="flex items-center p-2 text-sm font-normal rounded-md text-white hover:bg-slate-800 duration-100"
-											href="#">
-											<svg
-												class="w-5 h-5 text-gray-400"
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor">
-												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													stroke-width="2"
-													d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-											</svg>
-											<span class="ml-3 ">Settings</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</nav>
-				</div>
+          <nav data-dev-hint="main navigation" class="px-3.5 tracking-wide">
+            <aside class="" aria-label="Sidebar">
+              <div class="overflow-y-auto">
+                <ul class="space-y-1">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="home" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 bg-gray-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="bar-chart-2" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="layers" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Projects</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="check-square" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Task</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="flag" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Report</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="users" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">User</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </nav>
+        </div>
 
-				<nav class="p-3" data-dev-hint="second-main-navigation or footer navigation">
-					<div class="">
-						<a
-							href="#"
-							class="flex items-center p-2 text-sm rounded-md text-white hover:bg-slate-800 duration-100">
-							<svg
-								aria-hidden="true"
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-								fill="currentColor"
-								viewBox="0 0 20 20"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									fill-rule="evenodd"
-									d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
-									clip-rule="evenodd"></path>
-							</svg>
-							<span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
-						</a>
-					</div>
-				</nav>
-			</aside>
+        <nav
+          class="px-3"
+          data-dev-hint="second-main-navigation or footer navigation"
+        >
+          <div class="mb-3">
+            <a
+              href="#"
+              class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+            >
+              <span class="text-sm">
+                <i data-feather="chrome" class="h-5 w-5"></i>
+              </span>
+              <span class="">Support</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+            >
+              <span class="text-sm">
+                <i data-feather="settings" class="h-5 w-5"></i>
+              </span>
+              <span class="">Settings</span>
+            </a>
+            <div
+              class="mt-6 rounded-lg bg-blue-50 p-4 dark:bg-blue-900"
+              role="alert"
+            >
+              <div class="mb-3 flex items-center">
+                <span
+                  class="mr-2 rounded bg-orange-100 px-2.5 py-0.5 text-sm font-semibold text-orange-800 dark:bg-orange-200 dark:text-orange-900"
+                  >Beta</span
+                >
+                <button
+                  type="button"
+                  class="-mx-1.5 -my-1.5 ml-auto inline-flex items-center justify-center h-6 w-6 rounded-lg bg-blue-50 p-1 text-[#051E34] hover:bg-blue-200 focus:ring-2 focus:ring-blue-400 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
+                  data-collapse-toggle="dropdown-cta"
+                  aria-label="Close"
+                >
+                  <span class="sr-only">Close</span>
+                  <i data-feather="x"></i>
+                  </svg>
+                </button>
+              </div>
+              <p class="mb-1.5 text-sm text-[#051E34]">
+                Preview the new dashboard navigation! You can turn the
+                new navigation off for a limited time in your profile.
+              </p>
+              <a
+                class="text-sm text-blue-900 underline hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                href="#"
+                >Turn new navigation off</a
+              >
+            </div>
+          </div>
+          <div>
+            <div
+              class="-mx-3 flex items-center justify-between bg-gray-800 p-2"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-8 rounded-full"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8P6ddTVwFEYX1Ee2AwSE_iAf6vsInThMx5tBD9CRzhruR90cPeR-jJyaAO8H8stYmQg&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h4 class="text-sm text-white">John Due</h4>
+                  <p class="text-xs text-gray-400">support@email.com</p>
+                </div>
+              </div>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </aside>
 
-			<main id="content" class="flex-1 bg-slate-900 p-6 lg:px-8">
-				<div class="max-w-7xl mx-auto">
-					<!-- Replace with your content -->
-					<div class="px-4 py-6 sm:px-0">
-						<div class=""></div>
-					</div>
-					<!-- /End replace -->
-				</div>
-			</main>
-		</div>
-	</body>
+      <main id="content" class="flex-1 bg-white p-6 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <!-- Replace with your content -->
+          <div class="px-4 py-6 sm:px-0">
+            <div class=""></div>
+          </div>
+          <!-- /End replace -->
+        </div>
+      </main>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
