@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../asset/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <title>Services - Galaxy Home Care</title>
+    <title>Services-2</title>
   </head>
 
   <body class="font-roboto">
@@ -31,22 +27,22 @@
           <div class="flex h-full items-center justify-between">
             <div class="flex min-h-full w-[176px] items-center overflow-hidden">
               <img
-                id="logo-light"
+                id="logoLight"
                 class="w-36 lg:w-44"
                 src="../asset/img/logo-light.png"
                 alt=""
               />
               <img
-                id="logo-dark"
+                id="logoNight"
                 class="relative -top-1 w-36 lg:w-44"
                 src="../asset/img/logo-dark.png"
                 alt=""
               />
             </div>
             <span
-              class="inline-flex cursor-pointer items-center text-3xl text-slate-900 dark:text-white lg:hidden"
+              class="inline-flex cursor-pointer items-center text-xl text-slate-900 dark:text-white lg:hidden"
             >
-              <i onclick="Menu(this)" class="uil uil-bars"></i>
+              <i onclick="toggleMenuBar(this)" class="fa-solid fa-bars"></i>
             </span>
           </div>
           <div>
@@ -70,36 +66,21 @@
                   class="flex flex-row-reverse items-center justify-end gap-5 lg:flex-row lg:justify-start"
                 >
                   <button
-                    id="theme-toggle"
+                    id="themeColor"
                     type="button"
                     class="min-w-[20px] text-sm text-gray-500 focus:outline-none"
                   >
-                    <svg
-                      id="theme-toggle-dark-icon"
-                      class="hidden h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                      ></path>
-                    </svg>
-                    <svg
-                      id="theme-toggle-light-icon"
-                      class="hidden h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    <i
+                      class="fa-solid fa-cloud-sun fs-18"
+                      id="iconNight"
+                      style="display: none"
+                    ></i>
+                    <i
+                      class="fa-solid fa-cloud-moon fs-18"
+                      id="iconLight"
+                      style="display: none"
+                    ></i>
                   </button>
-
                   <button
                     class="primary-color h-8 w-full min-w-[79.42px] rounded px-5 text-white duration-500 lg:w-auto"
                   >
@@ -113,133 +94,115 @@
       </nav>
     </header>
     <main class="min-h-screen bg-slate-50 pb-20 dark:bg-gray-900">
-      <section class="py-10 lg:py-16">
-        <div
-          class="container flex h-full min-h-[203px] items-center justify-between px-6 xl:px-16 2xl:px-0"
-        >
-          <div>
-            <div class="w-full">
-              <h1
-                class="gradient-text font-inter text-3xl font-bold tracking-wide sm:text-4xl"
-              >
-                Popular Services
-              </h1>
-              <p
-                class="mt-2 text-base font-light tracking-wide text-slate-800 dark:text-gray-400"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi,
-                aliquid!
-              </p>
-            </div>
-            <nav class="hidden lg:block">
-              <ol
-                class="mt-6 inline-flex items-center space-x-1 rounded-lg border border-gray-200 bg-white py-2 px-5 text-gray-700 dark:border-gray-700 dark:bg-primary md:space-x-3"
-              >
-                <li class="inline-flex items-center">
-                  <a
-                    href="#"
-                    class="inline-flex items-center text-sm text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                  >
-                    <svg
-                      class="mr-2 h-4 w-4"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                      ></path>
-                    </svg>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <div class="flex items-center">
-                    <svg
-                      class="h-6 w-6 text-gray-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <a
-                      href="#"
-                      class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white md:ml-2"
-                      >Templates</a
-                    >
-                  </div>
-                </li>
-                <li aria-current="page">
-                  <div class="flex items-center">
-                    <svg
-                      class="h-6 w-6 text-gray-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span
-                      class="ml-1 text-sm font-medium text-gray-400 dark:text-gray-500 md:ml-2"
-                      >Theme</span
-                    >
-                  </div>
-                </li>
-              </ol>
-            </nav>
-          </div>
-          <div class="hidden lg:block">
-            <img class="w-60" src="../asset/img/icon/resources.svg" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <!-- ? first card -->
-        <div
-          class="mb-10 flex items-center gap-10 rounded-xl border border-gray-200 bg-white shadow-lg dark:border-slate-600 dark:bg-secondary"
-        >
-          <div class="flex-shrink-0">
-            <img
-              src="https://www.galaxyhomecarellc.com/wp-content/uploads/2021/12/facilities.jpg"
-              class="rounded-l-lg"
-              alt=""
-            />
-          </div>
-          <div>
-            <h2
-              class="mb-2 font-inter text-2xl font-semibold uppercase text-purple-700 dark:text-white"
-            >
-              Home Health Aide
-            </h2>
-            <p class="pr-10 tracking-wide text-gray-700 dark:text-gray-300">
-              Care and assistance suited to your needs. Living comfortably and
-              independently at home doesn’t have to be hard, especially for the
-              elderly. Even if you are managing old age, a chronic illness, or
-              other health conditions, you can still receive the care and
-              service you need to live a healthy and happy life. Our home health
-              aides work closely with Registered Nurses to assist you with your
-              needs so you can stay securely and conveniently in your own home.
-            </p>
-            <div class="mt-2 space-x-4">
-              <!-- <a href="" class="text-blue-600 font-semibold font-inter tracking-wide">Set Appointment</a> -->
-              <a
-                href=""
-                class="font-inter font-semibold tracking-wide text-purple-700"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
 
+
+      <section class="pt-16 container">
+        <div class="mb-8 text-center">
+          <div class="font-inter font-bold">
+            <h4 class="text-lg uppercase text-purple-600">Our Services</h4>
+            <h2 class="text-3xl uppercase text-slate-800 dark:text-white">
+              Featured Services
+            </h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-6">
+          <div
+            class="rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-secondary"
+          >
+            <img
+              src="https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg?w=1380&t=st=1668685607~exp=1668686207~hmac=be13e95b8e958bee6215dba51833b09dbd4890a9a4d52cdcf37bdd10b12f2d76"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="p-5">
+              <h2
+                class="mb-1 text-2xl font-bold tracking-wide text-gray-600 dark:text-purple-600"
+              >
+                Personal Care
+              </h2>
+              <p class="mb-2 text-gray-500 dark:text-slate-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non.
+              </p>
+              <a
+                href="#"
+                class="text-sm tracking-wide text-gray-600 hover:text-purple-500 dark:text-purple-600"
+                >Read More
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-secondary"
+          >
+            <img
+              src="https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg?w=1380&t=st=1668685607~exp=1668686207~hmac=be13e95b8e958bee6215dba51833b09dbd4890a9a4d52cdcf37bdd10b12f2d76"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="p-5">
+              <h2
+                class="mb-1 text-2xl font-bold tracking-wide text-gray-600 dark:text-purple-600"
+              >
+                Personal Care
+              </h2>
+              <p class="mb-2 text-gray-500 dark:text-slate-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              </p>
+              <a
+                href="#"
+                class="text-sm tracking-wide text-gray-600 hover:text-purple-500 dark:text-purple-600"
+                >Read More
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-secondary"
+          >
+            <img
+              src="https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg?w=1380&t=st=1668685607~exp=1668686207~hmac=be13e95b8e958bee6215dba51833b09dbd4890a9a4d52cdcf37bdd10b12f2d76"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="p-5">
+              <h2
+                class="mb-1 text-2xl font-bold tracking-wide text-gray-600 dark:text-purple-600"
+              >
+                Personal Care
+              </h2>
+              <p class="mb-2 text-gray-500 dark:text-slate-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              </p>
+              <a
+                href="#"
+                class="text-sm tracking-wide text-gray-600 hover:text-purple-500 dark:text-purple-600"
+                >Read More
+              </a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-secondary"
+          >
+            <img
+              src="https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg?w=1380&t=st=1668685607~exp=1668686207~hmac=be13e95b8e958bee6215dba51833b09dbd4890a9a4d52cdcf37bdd10b12f2d76"
+              alt=""
+              class="h-52 w-full rounded-t-lg"
+            />
+            <div class="p-5">
+              <h2
+                class="mb-1 text-2xl font-bold tracking-wide text-gray-600 dark:text-purple-600"
+              >
+                Personal Care
+              </h2>
+              <p class="mb-2 text-gray-500 dark:text-slate-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              </p>
+              <a
+                href="#"
+                class="text-sm tracking-wide text-gray-600 hover:text-purple-500 dark:text-purple-600"
+                >Read More
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -413,6 +376,6 @@
         </div>
       </div>
     </footer>
-    <script src="../asset/js/darkToggler.js"></script>
+    <script src="../asset/js/theme.js"></script>
   </body>
 </html>
