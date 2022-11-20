@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/app.css" />
+    <link rel="stylesheet" href="../asset/src/user-panel.css" />
+    <title>2</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+      integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="font-roboto">
+    <div class="relative h-screen md:flex" data-dev-hint="container">
+      <input type="checkbox" id="menu-open" class="hidden" />
+      <div
+        id="sidebar"
+        class="absolute z-20 flex h-screen w-60 flex-shrink-0 transform flex-col justify-between space-y-6 overflow-y-auto border-slate-700 bg-[#051E34] bg-[url(https://www.gstatic.com/mobilesdk/190424_mobilesdk/nav_nachos@2x.png)] bg-contain bg-center bg-no-repeat px-0 pt-3 text-gray-100 transition duration-200 ease-in-out md:relative md:translate-x-0"
+      >
+        <div class="flex flex-col space-y-6">
+          <a
+            href="#"
+            class="flex min-h-[40px] items-center space-x-2 pl-5 text-white"
+            title="Your App is cool"
+          >
+            <img src="../asset/img/brand-light.svg" class="w-4/6" alt="" />
+            <label
+              for="menu-open"
+              id="mobile-menu-button"
+              class="absolute right-1 inline-flex items-center rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none"
+            >
+              <label
+                for="menu-open"
+                id="mobile-menu-button"
+                class="inline-flex items-center rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none md:hidden"
+              >
+                <span>
+                  <i
+                    data-feather="x"
+                    id="menu-open-icon"
+                    class="h-6 w-6 transition duration-200 ease-in-out"
+                  ></i>
+                </span>
+                <span>
+                  <i
+                    data-feather="menu"
+                    id="menu-close-icon"
+                    class="h-6 w-6 transition-all duration-200 ease-in-out"
+                  ></i>
+                </span>
+              </label>
+              <span>
+                <i
+                  data-feather="x"
+                  id="menu-close-icon"
+                  class="h-6 w-6 transition-all duration-200 ease-in-out"
+                ></i>
+              </span>
+            </label>
+          </a>
+
+          <nav data-dev-hint="main navigation" class="px-3.5 tracking-wide">
+            <aside class="" aria-label="Sidebar">
+              <div class="overflow-y-auto">
+                <ul class="space-y-1">
+                  <li class="md:hidden">
+                    <div class="relative w-full text-gray-600">
+                      <input
+                        type="search"
+                        name="search"
+                        placeholder="Search"
+                        class="h-10 w-full rounded-lg bg-slate-800 px-5 pr-10 text-sm focus:outline-none"
+                      />
+                      <button
+                        type="submit"
+                        class="absolute right-0 top-0 mt-3 mr-4"
+                      >
+                        <i
+                          data-feather="search"
+                          class="h-4 w-4 min-w-[16px]"
+                        ></i>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="home" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md bg-gray-700 p-2 text-sm font-normal text-white duration-100"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="bar-chart-2" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="layers" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Projects</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="check-square" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Task</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="flag" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">Report</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+                    >
+                      <span class="text-sm">
+                        <i data-feather="users" class="h-5 w-5"></i>
+                      </span>
+                      <span class="">User</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </nav>
+        </div>
+        <nav
+          class="px-3"
+          data-dev-hint="second-main-navigation or footer navigation"
+        >
+          <div class="mb-3">
+            <a
+              href="#"
+              class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+            >
+              <span class="text-sm">
+                <i data-feather="chrome" class="h-5 w-5"></i>
+              </span>
+              <span class="">Support</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-3 rounded-md p-2 text-sm font-normal text-white duration-100 hover:bg-slate-700"
+            >
+              <span class="text-sm">
+                <i data-feather="settings" class="h-5 w-5"></i>
+              </span>
+              <span class="">Settings</span>
+            </a>
+            <div
+              class="mt-6 rounded-lg bg-blue-50 p-4 dark:bg-blue-900"
+              role="alert"
+            >
+              <div class="mb-3 flex items-center">
+                <span
+                  class="mr-2 rounded bg-orange-100 px-2.5 py-0.5 text-sm font-semibold text-orange-800 dark:bg-orange-200 dark:text-orange-900"
+                  >Beta</span
+                >
+                <button
+                  type="button"
+                  class="-mx-1.5 -my-1.5 ml-auto inline-flex h-6 w-6 items-center justify-center rounded-lg bg-blue-50 p-1 text-[#051E34] hover:bg-blue-200 focus:ring-2 focus:ring-blue-400 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
+                  data-collapse-toggle="dropdown-cta"
+                  aria-label="Close"
+                >
+                  <span class="sr-only">Close</span>
+                  <i data-feather="x"></i>
+                </button>
+              </div>
+              <p class="mb-1.5 text-sm text-[#051E34]">
+                Preview the new dashboard navigation! You can turn the new
+                navigation off for a limited time in your profile.
+              </p>
+              <a
+                class="text-sm text-blue-900 underline hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                href="#"
+                >Turn new navigation off</a
+              >
+            </div>
+          </div>
+          <div>
+            <div
+              class="-mx-3 flex items-center justify-between bg-gray-800 p-2"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  class="w-8 rounded-full"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8P6ddTVwFEYX1Ee2AwSE_iAf6vsInThMx5tBD9CRzhruR90cPeR-jJyaAO8H8stYmQg&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h4 class="text-sm text-white">John Due</h4>
+                  <p class="text-xs text-gray-400">support@email.com</p>
+                </div>
+              </div>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <main id="content" class="max-h-screen flex-1 overflow-auto bg-white dark:bg-slate-800">
+        <nav data-dev-hint="top nav" class="sticky top-0 w-full select-none">
+          <div
+            class="flex justify-between bg-[#051E34] px-3 py-2 text-gray-100"
+            data-dev-hint="mobile menu bar"
+          >
+            <div class="flex items-center gap-2 lg:w-full">
+              <label
+                for="menu-open"
+                id="mobile-menu-button"
+                class="inline-flex items-center rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none"
+              >
+                <span>
+                  <i
+                    data-feather="menu"
+                    id="menu-open-icon"
+                    class="h-6 w-6 transition duration-200 ease-in-out"
+                  ></i>
+                </span>
+                <span>
+                  <i
+                    data-feather="menu"
+                    id="menu-close-icon"
+                    class="h-6 w-6 transition-all duration-200 ease-in-out"
+                  ></i>
+                </span>
+              </label>
+              <li class="hidden w-5/12 md:block">
+                <div class="relative w-full text-gray-600">
+                  <input
+                    type="search"
+                    name="search"
+                    placeholder="Search"
+                    class="h-10 w-full rounded-lg bg-slate-800 px-5 pr-10 text-sm focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    class="absolute right-0 top-0 mt-3 mr-4"
+                  >
+                    <i data-feather="search" class="h-5 w-5 min-w-[16px]"></i>
+                  </button>
+                </div>
+              </li>
+            </div>
+            <ul class="flex w-full items-center justify-end gap-3">
+              <li class="inline-flex items-center">
+                <button
+                  id="theme-toggle"
+                  type="button"
+                  class="min-w-[20px] text-sm text-gray-500 focus:outline-none"
+                >
+                  <svg
+                    id="theme-toggle-dark-icon"
+                    class="hidden h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light-icon"
+                    class="hidden h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <span class="min-w-[16px]">
+                  <i data-feather="grid" class="h-5 w-5"></i>
+                </span>
+              </li>
+              <li>
+                <span class="min-w-[16px]">
+                  <i data-feather="bell" class="h-5 w-5"></i>
+                </span>
+              </li>
+
+              <li>
+                <a href="#" class="block min-w-[32px]">
+                  <img
+                    class="w-8 rounded-full"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8P6ddTVwFEYX1Ee2AwSE_iAf6vsInThMx5tBD9CRzhruR90cPeR-jJyaAO8H8stYmQg&usqp=CAU"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="p-3">
+          <div class="mx-auto mt-6 max-w-7xl">
+            <h1 class="text-4xl font-bold">Hi There</h1>
+            <p class="text-gray-500  mb-8">Let's see what's happen today!</p>
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+              <table
+                class="w-full text-left text-sm text-gray-500 dark:text-gray-400"
+              >
+                <thead
+                  class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+                >
+                  <tr>
+                    <th scope="col" class="py-3 px-6">Product name</th>
+                    <th scope="col" class="py-3 px-6">
+                      <div class="flex items-center">
+                        Color
+                        <a href="#"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1 h-3 w-3"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                            /></svg
+                        ></a>
+                      </div>
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                      <div class="flex items-center">
+                        Category
+                        <a href="#"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1 h-3 w-3"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                            /></svg
+                        ></a>
+                      </div>
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                      <div class="flex items-center">
+                        Price
+                        <a href="#"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ml-1 h-3 w-3"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                            /></svg
+                        ></a>
+                      </div>
+                    </th>
+                    <th scope="col" class="py-3 px-6">
+                      <span class="sr-only">Edit</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="border-b bg-white dark:border-gray-700 dark:bg-gray-800"
+                  >
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap py-4 px-6 font-medium text-gray-900 dark:text-white"
+                    >
+                      Apple MacBook Pro 17"
+                    </th>
+                    <td class="py-4 px-6">Sliver</td>
+                    <td class="py-4 px-6">Laptop</td>
+                    <td class="py-4 px-6">$2999</td>
+                    <td class="py-4 px-6 text-right">
+                      <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b bg-white dark:border-gray-700 dark:bg-gray-800"
+                  >
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap py-4 px-6 font-medium text-gray-900 dark:text-white"
+                    >
+                      Microsoft Surface Pro
+                    </th>
+                    <td class="py-4 px-6">White</td>
+                    <td class="py-4 px-6">Laptop PC</td>
+                    <td class="py-4 px-6">$1999</td>
+                    <td class="py-4 px-6 text-right">
+                      <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="bg-white dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      class="whitespace-nowrap py-4 px-6 font-medium text-gray-900 dark:text-white"
+                    >
+                      Magic Mouse 2
+                    </th>
+                    <td class="py-4 px-6">Black</td>
+                    <td class="py-4 px-6">Accessories</td>
+                    <td class="py-4 px-6">$99</td>
+                    <td class="py-4 px-6 text-right">
+                      <a
+                        href="#"
+                        class="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                        >Edit</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../asset/js/darkToggler.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
