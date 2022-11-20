@@ -4348,6 +4348,10 @@ select{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:\[mask-type\:alpha\]:hover{
+  mask-type: alpha;
+}
+
 .before\:hover\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
@@ -4712,6 +4716,10 @@ select{
 
 .dark .dark\:ring-offset-slate-800{
   --tw-ring-offset-color: #1e293b;
+}
+
+.dark .dark\:\[color-scheme\:dark\]{
+  color-scheme: dark;
 }
 
 .dark .before\:dark\:bg-violet-400::before{
