@@ -4291,6 +4291,11 @@ select{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-800:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-60:hover{
   --tw-bg-opacity: 0.6;
 }
@@ -4399,6 +4404,15 @@ select{
 .focus\:bg-gray-200:focus{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-red-800:focus{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-transparent:focus{
+  background-color: transparent;
 }
 
 .focus\:outline-none:focus{
