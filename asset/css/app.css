@@ -1068,6 +1068,10 @@ select{
   grid-column: span 12 / span 12;
 }
 
+.col-end-5{
+  grid-column-end: 5;
+}
+
 .float-right{
   float: right;
 }
@@ -1584,6 +1588,12 @@ select{
   width: 0.25rem;
 }
 
+.w-max{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .min-w-\[20px\]{
   min-width: 20px;
 }
@@ -1988,6 +1998,14 @@ select{
 
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -4742,6 +4760,10 @@ select{
     grid-column: span 8 / span 8;
   }
 
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mt-0{
     margin-top: 0px;
   }
@@ -4788,6 +4810,10 @@ select{
 
   .sm\:flex-row{
     flex-direction: row;
+  }
+
+  .sm\:flex-wrap{
+    flex-wrap: wrap;
   }
 
   .sm\:gap-8{
@@ -5043,6 +5069,14 @@ select{
 
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:flex-row{
