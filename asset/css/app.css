@@ -1497,6 +1497,10 @@ select{
   height: 230px;
 }
 
+.h-\[157\.5px\]{
+  height: 157.5px;
+}
+
 .max-h-screen{
   max-height: 100vh;
 }
@@ -2948,6 +2952,11 @@ select{
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/www\.galaxyhomecarellc\.com\/wp-content\/uploads\/2021\/12\/1-1\.jpg\'\)\]{
@@ -5219,6 +5228,10 @@ select{
     height: 100vh;
   }
 
+  .lg\:h-\[157\.5px\]{
+    height: 157.5px;
+  }
+
   .lg\:min-h-\[157\.5px\]{
     min-height: 157.5px;
   }
@@ -5245,6 +5258,10 @@ select{
 
   .lg\:min-h-\[24px\]{
     min-height: 24px;
+  }
+
+  .lg\:min-h-\[140px\]{
+    min-height: 140px;
   }
 
   .lg\:w-44{

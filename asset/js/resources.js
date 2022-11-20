@@ -61,7 +61,7 @@ cards.innerHTML = resources
   .map(
     (card) =>
       `
-   	<div class='min-h-[157.5px]'>
+   	<div class='lg:h-[157.5px]'>
 			<div class=" rounded-lg border bg-white  hover:bg-gray-100 dark:bg-primary dark:border-gray-700 dark:hover:bg-gray-800 cursor-pointer p-4 shadow-sm transition hover:shadow-lg sm:p-5">
          	<h3 class="mt-0.5 lg:min-h-[28px] text-lg font-inter font-medium text-slate-800 dark:text-slate-100">
            	 	${card.title}

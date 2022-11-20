@@ -75,7 +75,7 @@ function toggleMenuBar(event) {
 	} else {
 		event.name = "menu"
 		navigationBar.classList.remove("top-[60px]")
-		navigationBar.classList.remove("opacity-100")
+
 	}
 
 	if (navigationBar.style.display === "block") {
