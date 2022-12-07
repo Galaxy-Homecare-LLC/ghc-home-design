@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
-  <body class="font-roboto bg-slate-50 dark:bg-gray-900">
+  <body class="bg-slate-50 font-roboto dark:bg-gray-900">
     <header class="pt-[64px]">
       <nav id="navbar" class="fixed left-0 right-0 top-0 z-50 bg-white dark:bg-primary">
         <div
@@ -27,66 +27,98 @@
               <img id="logoLight" hidden class="w-36 lg:w-44" src="../asset/img/logo-light.png" alt="" />
               <img id="logoNight" hidden class="relative -top-1 w-36 lg:w-44" src="../asset/img/logo-dark.png" alt="" />
             </div>
-            <span class="inline-flex cursor-pointer items-center text-xl text-slate-900 dark:text-white lg:hidden">
-              <i onclick="toggleMenuBar(this)" class="fa-solid fa-bars"></i>
-            </span>
+            <div class="flex items-center gap-3 lg:hidden">
+              <a href="#" class="inline-block text-lg text-gray-500 dark:text-gray-400">
+                <i class="fa-solid fa-user-circle"></i>
+              </a>
+              <button id="mobileThemeColor" type="button"
+                class="min-w-[20px] text-lg text-gray-500 focus:outline-none dark:text-gray-400 lg:hidden">
+                <span id="mobileIconNight" class="hidden"><i class="fa-solid fa-cloud-moon"></i></span>
+                <span id="mobileIconLight" class="hidden"><i class="fa-solid fa-cloud-sun"></i></span>
+              </button>
+              <span class="inline-flex cursor-pointer items-center text-xl text-slate-900 dark:text-white lg:hidden">
+                <i onclick="toggleMenuBar(this)" class="fa-solid fa-bars"></i>
+              </span>
+            </div>
           </div>
           <div>
             <div id="navigation"
               class="absolute left-0 right-0 top-[-380px] z-[-100] transition-all duration-500 ease-in lg:static lg:z-auto lg:w-auto lg:min-w-[701.06px] lg:opacity-100">
               <ul
-                class="mx-auto flex w-full lg:justify-end flex-col gap-3 bg-white px-6 py-4 text-sm tracking-wide text-slate-800 font-medium dark:bg-primary dark:text-gray-200 lg:mx-0 lg:flex-row lg:items-center lg:gap-4 lg:px-0 lg:py-0">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./index.html">Services</a></li>
-                <li><a href="./pages/appointment.html">Appointment</a></li>
-                <li><a href="./pages/career.html">Career</a></li>
-                <li><a href="./pages/gallery.html">Gallery</a></li>
-                <li><a href="./pages/resources.html">Resource</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact</a></li>
-                <li class="flex flex-row-reverse items-center justify-end  gap-5 lg:flex-row lg:justify-start">
-                  <button id="themeColor" type="button" class="min-w-[20px] text-sm text-gray-500 focus:outline-none">
+                class="mx-auto flex w-full flex-col gap-3 bg-white px-6 py-4 text-[15px] font-medium tracking-wide text-slate-800 dark:bg-primary dark:text-gray-200 lg:mx-0 lg:flex-row lg:items-center lg:justify-end lg:gap-4 lg:px-0 lg:py-0">
+                <li class="font-semibold text-purple-600">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="./index.html">Services</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="./pages/appointment.html">Appointment</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="./pages/career.html">Career</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="./pages/gallery.html">Gallery</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="./pages/resources.html">Resource</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="">About Us</a>
+                </li>
+                <li class="duration-300 hover:text-purple-600">
+                  <a href="">Contact</a>
+                </li>
+                <li class="hidden items-center gap-5 lg:flex">
+                  <button id="themeColor" type="button"
+                    class="hidden min-w-[20px] text-sm text-gray-500 focus:outline-none lg:inline-block">
                     <span id="iconNight" class="hidden"><i class="fa-solid fa-cloud-moon"></i></span>
                     <span id="iconLight" class="hidden"><i class="fa-solid fa-cloud-sun"></i></span>
                   </button>
-                  <button
-                    class="primary-color h-8 w-full min-w-[79.42px] rounded px-5 text-white duration-500 lg:w-auto">
+                  <a href=""
+                    class="inline-flex h-9 min-w-[79.42px] items-center justify-center rounded bg-purple-600 px-8 text-white duration-500 lg:w-auto">
                     Login
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-      <!-- banner -->
-      <section class="container px-6 xl:px-16 2xl:px-0  ">
-        <div class=" mt-8 rounded-lg relative">
+    </header>
+    <main class="">
+      <!--? banner section -->
+      <section class="container px-6 xl:px-16 2xl:px-0">
+        <div class="relative mt-8 rounded-lg">
           <div class="overflow-hidden">
             <div class="mySwiper">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <div class="relative">
-                    <div class="sm:h-80 lg:h-96 xl:h-[500px] ">
+                    <div class="sm:h-80 lg:h-96 xl:h-[500px]">
                       <img src="./asset/img/banner-img-1.png"
-                        class="rounded-lg w-full object-cover h-full absolute inset-0 z-0" alt="">
-                      <div class="relative z-10 h-full text-white flex flex-col items-start justify-center lg:justify-end px-5 py-10 sm:p-10">
-                        <h1 class="text-4xl lg:text-5xl font-bold uppercase -ml-0.5
-                                  ">Galaxy Homecare llc</h1>
-                        <p class="max-w-2xl mt-2 text-gray-00">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                          Dicta, officia
-                          magnam odit facere labore vero id sint eaque molestiae animi!</p>
-                        <div class="mt-4 flex items-center flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                          <button
-                            class="rounded-md border border-purple-600 hover:bg-primary hover:border-slate-600 duration-300 bg-purple-600 w-full sm:w-auto py-2 px-5 text-white">
+                        class="absolute inset-0 z-0 h-full w-full rounded-lg object-cover" alt="" />
+                      <div
+                        class="relative z-10 flex h-full flex-col items-start justify-center px-5 py-10 text-white sm:p-10 lg:justify-end">
+                        <h1 class="-ml-0.5 text-4xl font-bold uppercase lg:text-5xl">
+                          Galaxy Homecare llc
+                        </h1>
+                        <p class="text-gray-00 mt-2 max-w-2xl">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Dicta, officia magnam odit facere labore vero id
+                          sint eaque molestiae animi!
+                        </p>
+                        <div class="mt-4 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row">
+                          <a href=""
+                            class="inline-block w-full rounded-md border border-purple-600 bg-purple-600 py-2 px-5 text-center text-white duration-300 hover:border-slate-600 hover:bg-primary sm:w-auto">
                             Set an Appointment
-                          </button>
-                          <button
-                            class="rounded-md border border-slate-600 bg-primary py-2 px-5 text-white duration-300 hover:border-transparent hover:bg-purple-700 w-full sm:w-auto">
+                          </a>
+                          <a href=""
+                            class="inline-block w-full rounded-md border border-slate-600 bg-primary py-2 px-5 text-center text-white duration-300 hover:border-transparent hover:bg-purple-700 sm:w-auto">
                             Contact With Us
-                          </button>
+                          </a>
                         </div>
-
                       </div>
                     </div>
                   </div>
@@ -94,11 +126,11 @@
               </div>
               <div>
                 <div
-                  class="swiper-button-next  h-10 w-10 items-center rounded-full border border-gray-200 bg-white shadow after:content-[''] dark:border-slate-600 dark:bg-slate-800 flex">
+                  class="swiper-button-next flex h-10 w-10 items-center rounded-full border border-gray-200 bg-white text-purple-600 shadow after:content-[''] dark:border-slate-600 dark:bg-slate-800">
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
                 <div
-                  class="swiper-button-prev  h-10 w-10 items-center rounded-full border border-gray-200 bg-white shadow after:content-[''] dark:border-slate-600 dark:bg-slate-800 flex">
+                  class="swiper-button-prev flex h-10 w-10 items-center rounded-full border border-gray-200 bg-white text-purple-600 shadow after:content-[''] dark:border-slate-600 dark:bg-slate-800">
                   <i class="fa-solid fa-angle-left"></i>
                 </div>
               </div>
@@ -106,24 +138,22 @@
           </div>
         </div>
       </section>
-    </header>
-    <main class="">
-      <div class="container space-y-20 py-20 px-6 xl:px-16 2xl:px-0">
+      <div class="container space-y-20 px-6 pt-20 xl:px-16 2xl:px-0">
         <!--? service section -->
         <section>
           <div class="mb-8 text-center">
-            <h2 class="text-2xl uppercase text-slate-800 dark:text-purple-600 sm:text-3xl font-bold tracking-wide">
+            <h2 class="text-2xl font-bold uppercase tracking-wide text-slate-800 dark:text-purple-600 sm:text-3xl">
               Services for you
             </h2>
             <p class="mt-1 text-gray-500 dark:text-gray-400">
               Let's get in touch of our services that might help to you
             </p>
           </div>
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-            <div class="rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-gray-800">
+          <div class="grid place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+            <div class="max-w-[305px] rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-gray-800">
               <img
                 src="https://img.freepik.com/free-photo/my-daughter-isn-t-afraid-pay-visit-here_329181-7634.jpg?w=1380&t=st=1668685607~exp=1668686207~hmac=be13e95b8e958bee6215dba51833b09dbd4890a9a4d52cdcf37bdd10b12f2d76"
-                alt="" class="h-52 w-full rounded-t-lg" />
+                alt="" class="h-52 w-full rounded-t-lg object-cover" />
               <div class="p-5">
                 <h2 class="mb-1 text-2xl font-bold tracking-wide text-gray-700 dark:text-purple-600">
                   Personal Care
@@ -139,31 +169,32 @@
               </div>
             </div>
             <div
-              class="flex min-h-[300px] flex-col items-center justify-center rounded-lg bg-white dark:bg-gray-800 shadow shadow-slate-600/10">
-              <img src="./asset/img/icon/grid.svg" alt="">
-              <span class="text-lg dark:text-gray-100 text-gray-600 font-semibold tracking-wide">And More</span>
+              class="mx-auto flex h-full min-h-[367px] w-full max-w-[305px] flex-col items-center justify-center rounded-lg bg-white shadow shadow-slate-600/10 dark:bg-gray-800">
+              <img src="./asset/img/icon/grid.svg" alt="" />
+              <span class="text-lg font-semibold tracking-wide text-gray-600 dark:text-gray-100">And More</span>
             </div>
           </div>
         </section>
         <!--? hiring section -->
         <section>
-          <div class="relative z-10 overflow-hidden rounded-lg bg-gray-800  px-5 py-6 md:px-10 md:py-12">
+          <div class="relative z-10 overflow-hidden rounded-lg bg-gray-800 px-5 py-6 md:px-10 md:py-12">
             <div class="flex flex-col items-center justify-between gap-5 md:flex-row">
               <div class="w-full text-center md:text-left">
                 <span class="mb-2 text-base font-medium tracking-wide text-white">
                   Providing 24 Hours Phone Support
                 </span>
-                <h2 class="font-inter text-2xl font-semibold text-white md:text-3xl uppercase">
+                <h2 class="font-inter text-2xl font-semibold uppercase text-white md:text-3xl">
                   We are Hiring Caregivers
                 </h2>
               </div>
-              <div class="flex w-full items-center justify-center gap-4 md:justify-end">
+              <div
+                class="flex w-full flex-shrink-0 flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row md:justify-end">
                 <a href="mailto:galaxyhomecarellc@gmail.com"
-                  class="inline-flex items-center gap-2 rounded-md border border-slate-600 px-5 py-2 hover:bg-purple-600 hover:border-purple-600 duration-300 text-white">
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-md border border-slate-600 px-5 py-2 text-white duration-300 hover:border-purple-600 hover:bg-purple-600 sm:w-auto">
                   Send us Email
                 </a>
                 <a href="tel:+1 (215) 588-506"
-                  class="inline-flex items-center gap-2 rounded-md bg-purple-600 px-6 py-2 hover:bg-transparent border border-purple-600 hover:border-slate-600 duration-300 text-white">
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-md border border-purple-600 bg-purple-600 px-6 py-2 text-white duration-300 hover:border-slate-600 hover:bg-transparent sm:w-auto">
                   Call Us Now
                 </a>
               </div>
@@ -201,50 +232,65 @@
         <section>
           <div>
             <div class="mb-8 text-center">
-              <h2 class="text-2xl uppercase text-slate-800 dark:text-purple-600 sm:text-3xl font-bold tracking-wide">
+              <h2 class="text-2xl font-bold uppercase tracking-wide text-slate-800 dark:text-purple-600 sm:text-3xl">
                 why choose us
               </h2>
               <p class="mt-1 text-gray-500 dark:text-gray-400">
                 Because we care about your safety and following context.
               </p>
             </div>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
+            <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="rounded-lg bg-white p-5 shadow dark:bg-gray-800">
                 <span
-                  class="text-2xl bg-purple-600 dark:bg-yellow-500 text-white w-10 inline-flex items-center justify-center rounded-md mb-3 h-10 p-1 ">
+                  class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-purple-600 p-1 text-2xl text-white dark:bg-yellow-500">
                   <i class="fa-solid fa-mask-face"></i>
                 </span>
-                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">Ensuring Masks</h5>
-                <p class="text-gray-500 text-sm dark:text-gray-400">There are many variations of passages of Lorem Ipsum
-                  available.</p>
+                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">
+                  Ensuring Masks
+                </h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
               </div>
-              <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
+              <div class="rounded-lg bg-white p-5 shadow dark:bg-gray-800">
                 <span
-                  class="text-2xl bg-purple-600 dark:bg-yellow-500 text-white w-10 inline-flex items-center justify-center rounded-md mb-3 h-10 p-1 ">
+                  class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-purple-600 p-1 text-2xl text-white dark:bg-yellow-500">
                   <i class="fa-solid fa-headset"></i>
                 </span>
-                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">24/7 Phone Support</h5>
-                <p class="text-gray-500 text-sm dark:text-gray-400">There are many variations of passages of Lorem Ipsum
-                  available.</p>
+                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">
+                  24/7 Phone Support
+                </h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
               </div>
-              <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
+              <div class="rounded-lg bg-white p-5 shadow dark:bg-gray-800">
                 <span
-                  class="text-2xl bg-purple-600 dark:bg-yellow-500 text-white w-10 inline-flex items-center justify-center rounded-md mb-3 h-10 p-1 ">
+                  class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-purple-600 p-1 text-2xl text-white dark:bg-yellow-500">
                   <i class="fa-solid fa-pump-medical"></i>
                 </span>
-                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">Ensuring Sanitization
+                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">
+                  Ensuring Sanitization
                 </h5>
-                <p class="text-gray-500 text-sm dark:text-gray-400">There are many variations of passages of Lorem Ipsum
-                  available.</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
               </div>
-              <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
+              <div class="rounded-lg bg-white p-5 shadow dark:bg-gray-800">
                 <span
-                  class="text-2xl bg-purple-600 dark:bg-yellow-500 text-white w-10 inline-flex items-center justify-center rounded-md mb-3 h-10 p-1 ">
+                  class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-purple-600 p-1 text-2xl text-white dark:bg-yellow-500">
                   <i class="fa-solid fa-hands-bubbles"></i>
                 </span>
-                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">Ensuring Gloves</h5>
-                <p class="text-gray-500 text-sm dark:text-gray-400">There are many variations of passages of Lorem Ipsum
-                  available.</p>
+                <h5 class="text-lg font-medium tracking-wide text-gray-800 dark:text-gray-100">
+                  Ensuring Gloves
+                </h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  There are many variations of passages of Lorem Ipsum
+                  available.
+                </p>
               </div>
             </div>
           </div>
@@ -252,18 +298,18 @@
         <!--? gallery section -->
         <section>
           <div class="mb-8 text-center">
-            <h2 class="text-2xl uppercase text-slate-800 dark:text-purple-600 sm:text-3xl font-bold tracking-wide">
+            <h2 class="text-2xl font-bold uppercase tracking-wide text-slate-800 dark:text-purple-600 sm:text-3xl">
               Events Gallery
             </h2>
             <p class="mt-1 text-gray-500 dark:text-gray-400">
               Here you can find some our various events photos at a glance
             </p>
           </div>
-          <div class=" space-y-3 xl:space-y-5">
-            <div class="grid gap-3 xl:gap-5 overflow-hidden md:grid-cols-2">
+          <div class="space-y-3 xl:space-y-5">
+            <div class="grid gap-3 overflow-hidden md:grid-cols-2 xl:gap-5">
               <div class="w-full overflow-hidden rounded-lg">
                 <img alt="gallery"
-                  class="block h-full w-full rounded-lg cursor-pointer object-cover object-center transition-all duration-500 ease-in-out hover:scale-105"
+                  class="block h-full w-full cursor-pointer rounded-lg object-cover object-center transition-all duration-500 ease-in-out hover:scale-105"
                   src="./asset/img/mainImg-1.png" />
               </div>
               <div class="mb-4 grid h-full grid-cols-2 gap-3 xl:gap-5">
@@ -289,7 +335,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid gap-3 xl:gap-5 md:grid-cols-2">
+            <div class="grid gap-3 md:grid-cols-2 xl:gap-5">
               <div class="mb-4 grid h-full grid-cols-2 gap-3 xl:gap-5">
                 <div class="overflow-hidden rounded-lg">
                   <img alt="gallery"
@@ -324,71 +370,72 @@
         <section>
           <div>
             <div class="mb-8 text-center">
-              <h2 class="text-2xl uppercase text-slate-800 dark:text-purple-600 sm:text-3xl font-bold tracking-wide">
+              <h2 class="text-2xl font-bold uppercase tracking-wide text-slate-800 dark:text-purple-600 sm:text-3xl">
                 How it Works
               </h2>
               <p class="mt-1 text-gray-500 dark:text-gray-400">
                 Because we care about your safety and following context.
               </p>
             </div>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <div>
                 <div
-                  class="bg-slate-300 dark:bg-gray-800  shadow rounded-lg h-32 sm:h-[140px] lg:h-36 xl:h-32 px-6 pb-5 flex flex-col justify-end relative">
+                  class="relative flex h-32 flex-col justify-end rounded-lg bg-slate-300 px-6 pb-5 shadow dark:bg-gray-800 sm:h-[140px] lg:h-36 xl:h-32">
                   <span
-                    class=" inline-flex items-center justify-center bg-slate-300 dark:bg-gray-800 dark:text-white w-10 h-10 rounded-full text-gray-800 font-bold absolute -top-2.5 -left-2.5 ring-4 ring-slate-50 dark:ring-gray-900">
+                    class="absolute -top-2.5 -left-2.5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-300 font-bold text-gray-800 ring-4 ring-slate-50 dark:bg-gray-800 dark:text-white dark:ring-gray-900">
                     01
                   </span>
-                  <h3 class="text-lg text-gray-800 font-semibold tracking-wide dark:text-gray-100 leading-6">Select the
-                    Service
+                  <h3 class="text-lg font-semibold leading-6 tracking-wide text-gray-800 dark:text-gray-100">
+                    Select the Service
                   </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400 ">Pick the service you are looking for- from the
-                    website or the app.</p>
-                </div>
-              </div>
-              <div>
-                <div
-                  class="bg-slate-300 dark:bg-gray-800  shadow rounded-lg h-32 sm:h-[140px] lg:h-36 xl:h-32 px-6 pb-5 flex flex-col justify-end relative">
-                  <span
-                    class=" inline-flex items-center justify-center bg-slate-300 dark:bg-gray-800 dark:text-white w-10 h-10 rounded-full text-gray-800 font-bold absolute -top-2.5 -left-2.5 ring-4 ring-slate-50 dark:ring-gray-900">
-                    02
-                  </span>
-                  <h3 class="text-lg text-gray-800 font-semibold tracking-wide dark:text-gray-100 leading-6"> Pick your
-                    schedule
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400 ">Pick your convenient date and time to avail the
-                    service..</p>
-                </div>
-              </div>
-              <div>
-                <div
-                  class="bg-slate-300 dark:bg-gray-800  shadow rounded-lg h-32 sm:h-[140px] lg:h-36 xl:h-32 px-6 pb-5 flex flex-col justify-end relative">
-                  <span
-                    class=" inline-flex items-center justify-center bg-slate-300 dark:bg-gray-800 dark:text-white w-10 h-10 rounded-full text-gray-800 font-bold absolute -top-2.5 -left-2.5 ring-4 ring-slate-50 dark:ring-gray-900">
-                    03
-                  </span>
-                  <h3 class="text-lg text-gray-800 font-semibold tracking-wide dark:text-gray-100 leading-6">Place Your
-                    Order &
-                    Relax
-                  </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400 ">Review and place the order. Now just sit back and
-                    relax.
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Pick the service you are looking for- from the website or
+                    the app.
                   </p>
                 </div>
               </div>
               <div>
                 <div
-                  class="bg-slate-300 dark:bg-gray-800  shadow rounded-lg h-32 sm:h-[140px] lg:h-36 xl:h-32 px-6 pb-5 flex flex-col justify-end relative">
+                  class="relative flex h-32 flex-col justify-end rounded-lg bg-slate-300 px-6 pb-5 shadow dark:bg-gray-800 sm:h-[140px] lg:h-36 xl:h-32">
                   <span
-                    class=" inline-flex items-center justify-center bg-slate-300 dark:bg-gray-800 dark:text-white w-10 h-10 rounded-full text-gray-800 font-bold absolute -top-2.5 -left-2.5 ring-4 ring-slate-50 dark:ring-gray-900">
+                    class="absolute -top-2.5 -left-2.5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-300 font-bold text-gray-800 ring-4 ring-slate-50 dark:bg-gray-800 dark:text-white dark:ring-gray-900">
+                    02
+                  </span>
+                  <h3 class="text-lg font-semibold leading-6 tracking-wide text-gray-800 dark:text-gray-100">
+                    Pick your schedule
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Pick your convenient date and time to avail the service..
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="relative flex h-32 flex-col justify-end rounded-lg bg-slate-300 px-6 pb-5 shadow dark:bg-gray-800 sm:h-[140px] lg:h-36 xl:h-32">
+                  <span
+                    class="absolute -top-2.5 -left-2.5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-300 font-bold text-gray-800 ring-4 ring-slate-50 dark:bg-gray-800 dark:text-white dark:ring-gray-900">
                     03
                   </span>
-                  <h3 class="text-lg text-gray-800 font-semibold tracking-wide dark:text-gray-100 leading-6">We reached
-                    your
-                    locations
+                  <h3 class="text-lg font-semibold leading-6 tracking-wide text-gray-800 dark:text-gray-100">
+                    Place Your Order & Relax
                   </h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-400 ">Review and place the order. Now just sit back and
-                    relax.
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Review and place the order. Now just sit back and relax.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="relative flex h-32 flex-col justify-end rounded-lg bg-slate-300 px-6 pb-5 shadow dark:bg-gray-800 sm:h-[140px] lg:h-36 xl:h-32">
+                  <span
+                    class="absolute -top-2.5 -left-2.5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-300 font-bold text-gray-800 ring-4 ring-slate-50 dark:bg-gray-800 dark:text-white dark:ring-gray-900">
+                    03
+                  </span>
+                  <h3 class="text-lg font-semibold leading-6 tracking-wide text-gray-800 dark:text-gray-100">
+                    We reached your locations
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Review and place the order. Now just sit back and relax.
                   </p>
                 </div>
               </div>
@@ -404,7 +451,7 @@
               </h2>
             </div>
 
-            <p class="mt-1 text-gray-600 dark:text-gray-400 lg:w-4/6 mx-auto">
+            <p class="mx-auto mt-1 text-gray-600 dark:text-gray-400 lg:w-4/6">
               Assisting people with disabilities, the elderly or sick is a
               rewarding career. If you think you have what it takes to be a
               caregiver, checkout the employment opportunities we have to offer.
@@ -413,16 +460,16 @@
 
           <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <div class="">
-              <div class="flex xl:h-60 h-52 w-full flex-col justify-end  rounded-lg  z-20 overflow-hidden relative p-4">
+              <div class="relative z-20 flex h-52 w-full flex-col justify-end overflow-hidden rounded-lg p-4 xl:h-60">
                 <div>
                   <div class="absolute inset-0 z-0">
-                    <div class=" relative inset-0 h-full bg-black z-10">
-                      <img src="./asset/img/meeting.png" class="h-full w-full" alt="">
+                    <div class="relative inset-0 z-10 h-full bg-black">
+                      <img src="./asset/img/meeting.png" class="h-full w-full" alt="" />
                     </div>
-                    <div class=" absolute inset-0 h-full bg-black/20 z-10"></div>
+                    <div class="absolute inset-0 z-10 h-full bg-black/20"></div>
                   </div>
                   <a href=""
-                    class="inline-flex items-center gap-2 rounded-md border relative z-20 border-slate-600 bg-gray-800 px-5 py-2 duration-300 hover:bg-purple-600 hover:border-purple-600 text-white">
+                    class="relative z-20 inline-flex items-center gap-2 rounded-md border border-slate-600 bg-gray-800 px-5 py-2 text-white duration-300 hover:border-purple-600 hover:bg-purple-600">
                     <i class="fa-solid fa-message text-sm"></i> Meet Our
                     Caregivers
                   </a>
@@ -430,17 +477,16 @@
               </div>
             </div>
             <div class="">
-              <div
-                class="flex xl:h-60 h-52  w-full flex-col justify-end  rounded-lg  z-20 overflow-hidden relative p-4">
+              <div class="relative z-20 flex h-52 w-full flex-col justify-end overflow-hidden rounded-lg p-4 xl:h-60">
                 <div>
                   <div class="absolute inset-0 z-0">
-                    <div class=" relative inset-0 h-full bg-black z-10">
-                      <img src="./asset/img/referrals.png" class="h-full w-full" alt="">
+                    <div class="relative inset-0 z-10 h-full bg-black">
+                      <img src="./asset/img/referrals.png" class="h-full w-full" alt="" />
                     </div>
-                    <div class=" absolute inset-0 h-full bg-black/20 z-10"></div>
+                    <div class="absolute inset-0 z-10 h-full bg-black/20"></div>
                   </div>
                   <a href=""
-                    class="inline-flex items-center gap-2 relative z-20 rounded-md border border-slate-600 bg-gray-800 px-5 py-2  duration-300 hover:bg-purple-600 hover:border-purple-600 text-white">
+                    class="relative z-20 inline-flex items-center gap-2 rounded-md border border-slate-600 bg-gray-800 px-5 py-2 text-white duration-300 hover:border-purple-600 hover:bg-purple-600">
                     <i class="fa-solid fa-share text-sm"></i> Send Your
                     Referrals
                   </a>
@@ -448,30 +494,28 @@
               </div>
             </div>
             <div class="">
-              <div class="flex xl:h-60 h-52 w-full flex-col justify-end  rounded-lg  z-20 overflow-hidden relative p-4">
+              <div class="relative z-20 flex h-52 w-full flex-col justify-end overflow-hidden rounded-lg p-4 xl:h-60">
                 <div>
                   <div class="absolute inset-0 z-0">
-                    <div class=" relative inset-0 h-full bg-black z-10">
-                      <img src="./asset/img/appointment.png" class="h-full w-full" alt="">
+                    <div class="relative inset-0 z-10 h-full bg-black">
+                      <img src="./asset/img/appointment.png" class="h-full w-full" alt="" />
                     </div>
-                    <div class=" absolute inset-0 h-full bg-black/20 z-10"></div>
+                    <div class="absolute inset-0 z-10 h-full bg-black/20"></div>
                   </div>
                   <a href=""
-                    class="inline-flex relative z-20 items-center gap-2 rounded-md border border-slate-600 bg-gray-800 px-5 py-2  duration-300 hover:bg-purple-600 hover:border-purple-600 text-white">
+                    class="relative z-20 inline-flex items-center gap-2 rounded-md border border-slate-600 bg-gray-800 px-5 py-2 text-white duration-300 hover:border-purple-600 hover:bg-purple-600">
                     <i class="fa-solid fa-clipboard-list text-sm"></i> Set an
                     Appointment
                   </a>
                 </div>
               </div>
             </div>
-
-
           </div>
         </section>
       </div>
     </main>
-    <footer class="">
-      <div class="bg-primary">
+    <footer>
+      <div class="mt-20 bg-primary">
         <div class="container px-6 pt-16 xl:px-16 2xl:px-0">
           <div class="mb-8 grid lg:grid-cols-6">
             <div class="grid grid-cols-2 gap-5 md:grid-cols-3 lg:col-span-4">
@@ -543,7 +587,7 @@
               <span class="text-base font-medium tracking-wide text-gray-300">Subscribe for updates</span>
               <form class="mt-4 flex flex-col md:flex-row">
                 <input placeholder="Email" required="" type="text"
-                  class="focus:shadow-outline mb-3 h-10 w-full flex-grow appearance-none rounded border border-slate-600 bg-gray-800 text-gray-300 px-4 transition duration-200 focus:outline-none md:mr-2 md:mb-0" />
+                  class="focus:shadow-outline mb-3 h-10 w-full flex-grow appearance-none rounded border border-slate-600 bg-gray-800 px-4 text-gray-300 transition duration-200 focus:outline-none md:mr-2 md:mb-0" />
                 <button type="submit"
                   class="primary-color inline-flex h-10 items-center justify-center rounded-md px-6 font-medium tracking-wide text-white shadow-md">
                   Subscribe
@@ -587,7 +631,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="./asset/js/theme.js"></script> -->
     <script src="./asset/js/darkToggler.js"></script>
     <script src="./asset/js/home-banner.js"></script>
   </body>
