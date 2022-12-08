@@ -69,10 +69,10 @@ cards.innerHTML = resources
          	<p class="mt-2 text-sm lg:min-h-[45.5px] leading-relaxed text-gray-500 dark:text-gray-400">
             	${card.quote}
         		 </p>
-				<button class='mt-2 lg:min-h-[24px] text-blue-700 font-bold tracking-wider inline-flex items-center'>
+				<a href='/' class='mt-2  lg:min-h-[24px] text-blue-700 font-bold tracking-wider inline-flex items-center'>
 					<span class='inline-flex items-center  space-x-2'>Read more</span>
 					<span class='ml-2'><i class="fa-solid fa-link"></i></span>
-				</button>
+				</a>
     		</div>
 		</div>
 	`
