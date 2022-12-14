@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".swiper-container", {
+  new Swiper(".testimonials", {
+    speed:800,
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 32,
+    spaceBetween: 24,
     autoplay: {
-      delay: 8000,
+      delay: 3000,
     },
     breakpoints: {
       640: {
@@ -13,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       1024: {
         centeredSlides: false,
-        slidesPerView: 1.5,
+        slidesPerView: 3,
       },
     },
     navigation: {
-      nextEl: ".next-button",
-      prevEl: ".prev-button",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 });
