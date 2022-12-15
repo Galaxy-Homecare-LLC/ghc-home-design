@@ -121,7 +121,7 @@
          <section>
             <div class="container px-6 mt-20 xl:px-16 2xl:px-0">
                <div
-                  class="mb-10 flex flex-col lg:flex-row justify-between gap-10 rounded-lg border bg-white border-gray-100 bg-transparent dark:bg-primary p-5 sm:p-12 dark:border-gray-800">
+                  class="mb-10 flex flex-col lg:flex-row justify-between gap-10 rounded-lg border bg-white   dark:bg-primary p-5 sm:p-12 dark:border-gray-800">
                   <div class="flex lg:w-[40%] flex-col justify-between rounded-lg space-y-10  p-5 sm:p-0">
                      <div class="">
                         <div class="font-inter font-bold">
@@ -144,44 +144,44 @@
                            </span>
                            <div>
                               <p class="text-sm  text-slate-800 dark:text-gray-100">Phone Number</p>
-                              <span>+1(215) 588-5068 </span>
+                              <a href="">+1(215) 588-5068 </a>
                            </div>
                         </div>
                         <div class="flex  items-start gap-3 ">
                            <span> <i class="fa-solid fa-envelope text-purple-600"></i> </span>
                            <div>
                               <p class="text-sm  text-slate-800 dark:text-gray-100">Email Address</p>
-                              <span>info@galaxyhomecarellc.com </span>
+                              <a href="">info@galaxyhomecarellc.com </a>
                            </div>
                         </div>
                         <div class="flex  items-start gap-3 ">
                            <span> <i class="fa-solid fa-location text-purple-600"></i> </span>
                            <div>
                               <p class="text-sm  text-slate-800 dark:text-gray-100"> Office Locations </p>
-                              <span>101 Coventry Cir, Lansdale, PA 19446-6400 </span>
+                              <a href="">101 Coventry Cir, Lansdale, PA 19446-6400 </a>
                            </div>
                         </div>
                         <div class="flex  items-start gap-3 ">
                            <span><i class="fa-solid fa-blender-phone text-purple-600"></i> </span>
                            <div>
                               <p class="text-sm  text-slate-800 dark:text-gray-100"> Fax Number </p>
-                              <span>+1(215) 588-5068 </span>
+                              <a href="">+1(215) 588-5068 </a>
                            </div>
                         </div>
                      </div>
                      <div class="flex items-center gap-3 text-xl text-purple-600">
-                        <span
+                        <a href=""
                            class="inline-flex items-center justify-center bg-purple-600 w-10 h-10 cursor-pointer rounded-full bg-opacity-10">
                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-                        <span
+                        </a>
+                        <a href=""
                            class="inline-flex items-center justify-center bg-purple-600 w-10 h-10 cursor-pointer rounded-full bg-opacity-10">
                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                        <span
+                        </a>
+                        <a href=""
                            class="inline-flex items-center justify-center bg-purple-600 w-10 h-10 cursor-pointer rounded-full bg-opacity-10">
                            <i class="fa-brands fa-twitter"></i>
-                        </span>
+                        </a>
                      </div>
                   </div>
                   <div class="lg:w-[60%] bg-gray-900 dark:bg-gray-800 p-4 sm:p-7 rounded-lg">
@@ -273,11 +273,14 @@
          <!--? google map  -->
          <section>
             <div class="container mt-20 px-6  xl:px-16 2xl:px-0">
-               <div class=" ">
-                  <div class="w-full">
-                     <iframe width="100%" height="431" style="border-radius: 8px; max-width: 1280px" id="gmap_canvas"
+               <div class="relative h-80 sm:h-96 md:h-[430px]">
+                  <div class="w-full h-full ">
+                     <iframe width="100%" height="100%" style="border-radius: 8px; max-width: 1280px" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=101%20Coventry%20Cir,%20Lansdale,%20PA%2019446-6400&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  </div>
+                  <div class="h-24 w-24  absolute right-2.5 top-2.5">
+                     <img src="../asset/img/ghc_qrcode.png" alt="">
                   </div>
                </div>
             </div>
@@ -410,7 +413,28 @@
             </div>
          </div>
       </footer>
+      <!-- click to scroll top btn -->
+      <div class="hidden sm:inline-block fixed bottom-10 right-10">
+         <span id="scrollTopBtn"
+            class="bg-purple-600 hover:bg-purple-700 duration-300 cursor-pointer text-white flex items-center justify-center w-9 h-9 rounded-full ">
+            <i class="fa-solid fa-arrow-up"></i>
+         </span>
+      </div>
       <script src="../asset/js/darkToggler.js"></script>
+      <script>
+         const clickToScrollTop = document.getElementById("scrollTopBtn");
+         window.onscroll = function () { scrollFunction() };
+         function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+               clickToScrollTop.style.display = "flex";
+            } else {
+               clickToScrollTop.style.display = "none";
+            }
+         }
+         clickToScrollTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: "smooth" })
+         })
+      </script>
    </body>
 
 </html>
