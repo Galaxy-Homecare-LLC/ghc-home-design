@@ -7,6 +7,8 @@ const mobileThemeToggleLightIcon = document.getElementById("mobileIconLight");
 const logoLight = document.getElementById("logoLight");
 const logoNight = document.getElementById("logoNight");
 const currentTheme = localStorage.getItem("color-theme");
+const menuOpenBtn = document.getElementById("menu-open");
+const menuCloseBtn = document.getElementById("menu-close");
 const navbar = document.getElementById("navbar");
 const list = document.querySelector("#navigation");
 // Change the icons inside the button based on previous settings
@@ -99,6 +101,16 @@ const added = window.addEventListener("scroll", function () {
     navbar.classList.remove("dark:border-white");
   }
 });
-function toggleMenuBar(e) {
-  list.classList.toggle("top-[60px]");
+// function toggleMenuBar(e) {
+//   list.classList.toggle("top-[60px]");
+// }
+function menuOpen(e) {
+  menuOpenBtn.style.display = "none";
+  menuCloseBtn.style.display = "block";
+  list.classList.add("top-[60px]");
+}
+function menuClose(e) {
+   menuCloseBtn.style.display = "none";
+   menuOpenBtn.style.display = "block";
+  list.classList.remove("top-[60px]");
 }
