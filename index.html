@@ -36,8 +36,11 @@
                 <span id="mobileIconNight" class="hidden"><i class="fa-solid fa-cloud-moon"></i></span>
                 <span id="mobileIconLight" class="hidden"><i class="fa-solid fa-cloud-sun"></i></span>
               </button>
-              <span class="inline-flex cursor-pointer items-center text-xl text-slate-900 dark:text-white lg:hidden">
-                <i onclick="toggleMenuBar(this)" class="fa-solid fa-bars"></i>
+              <span
+                class="inline-flex w-5 justify-end cursor-pointer items-center text-xl text-gray-500 dark:text-gray-400 lg:hidden">
+                <i id="menu-open" onclick="menuOpen(this)" class="fa-solid fa-bars"></i>
+                <i style="display: none;" id="menu-close" onclick="menuClose(this)"
+                  class="fa-solid fa-close -ml-0.5 text-2xl"></i>
               </span>
             </div>
           </div>
