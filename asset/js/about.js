@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".testimonials", {
-    speed:800,
+    speed:1000,
     loop: true,
     slidesPerView: 1,
     spaceBetween: 24,
@@ -8,14 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 3000,
     },
     breakpoints: {
-      640: {
-        centeredSlides: true,
-        slidesPerView: 1.25,
-      },
+
       1024: {
+        centeredSlides: false,
+        slidesPerView: 2,
+      },
+      1200: {
         centeredSlides: false,
         slidesPerView: 3,
       },
+
     },
     navigation: {
       nextEl: ".swiper-button-next",
