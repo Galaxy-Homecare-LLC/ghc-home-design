@@ -1055,6 +1055,10 @@ select{
   top: 60px;
 }
 
+.left-10{
+  left: 2.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -1613,6 +1617,10 @@ select{
 
 .h-7{
   height: 1.75rem;
+}
+
+.h-2{
+  height: 0.5rem;
 }
 
 .max-h-screen{
@@ -3323,6 +3331,14 @@ select{
   fill: currentColor;
 }
 
+.stroke-purple-600{
+  stroke: #9333ea;
+}
+
+.stroke-purple-700{
+  stroke: #7e22ce;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -3650,6 +3666,10 @@ select{
 
 .pl-8{
   padding-left: 2rem;
+}
+
+.pr-3{
+  padding-right: 0.75rem;
 }
 
 .text-left{
@@ -5310,6 +5330,10 @@ select{
     grid-column: span 8 / span 8;
   }
 
+  .sm\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .sm\:mt-0{
     margin-top: 0px;
   }
@@ -5471,6 +5495,10 @@ select{
     padding-right: 0px;
   }
 
+  .sm\:pl-10{
+    padding-left: 2.5rem;
+  }
+
   .sm\:text-left{
     text-align: left;
   }
@@ -5582,6 +5610,10 @@ select{
 @media (min-width: 768px){
   .md\:relative{
     position: relative;
+  }
+
+  .md\:col-span-1{
+    grid-column: span 1 / span 1;
   }
 
   .md\:mr-2{
@@ -5725,6 +5757,10 @@ select{
   .md\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:pl-10{
+    padding-left: 2.5rem;
   }
 
   .md\:text-left{

@@ -184,7 +184,7 @@
         <div class="container px-6 pt-16 xl:px-16 2xl:px-0">
           <div class="mb-8 grid lg:grid-cols-6">
             <div class="grid grid-cols-2 gap-5 md:grid-cols-3 lg:col-span-4">
-              <div class="">
+              <div class="col-span-2 md:col-span-1">
                 <h3 class="font-medium tracking-wide text-gray-300">About</h3>
                 <div class="mt-2 ">
                   <p class="text-sm text-gray-500 transition-colors duration-300 hover:text-gray-400">Galaxy Home
@@ -217,7 +217,7 @@
                   </div>
                 </div>
               </div>
-              <div class="pl-10">
+              <div class="md:pl-10">
                 <h3 class="font-medium tracking-wide text-gray-300">Services</h3>
                 <ul class="mt-2 space-y-1 text-sm">
                   <li>
@@ -280,13 +280,13 @@
                   Subscribe
                 </button>
               </form>
-              <p class="mt-4 text-sm text-gray-500">
+              <p class="mt-4 text-sm text-center md:text-left text-gray-500">
                 Bacon ipsum dolor amet short ribs pig sausage prosciuto chicken
                 spare ribs salami.
               </p>
             </div>
           </div>
-          <div class="flex flex-col justify-between border-t border-gray-800 pt-5 pb-10 sm:flex-row">
+          <div class="flex flex-col items-center justify-between border-t border-gray-800 pt-5 pb-10 sm:flex-row">
             <p class="text-sm text-gray-500">
               © Copyright 2020 Lorem Inc. All rights reserved.
             </p>
@@ -298,10 +298,17 @@
         </div>
       </div>
       <!-- click to scroll top btn -->
-      <div class="hidden sm:inline-block fixed bottom-10 right-10">
+      <div class="hidden sm:inline-block fixed bottom-10 left-10">
         <span id="scrollTopBtn"
-          class="bg-purple-600 hover:bg-purple-700 duration-300 cursor-pointer text-white flex items-center justify-center w-9 h-9 rounded-full ">
-          <i class="fa-solid fa-arrow-up"></i>
+          class="bg-white duration-300 cursor-pointer pl-4 pr-3 flex items-center  gap-1 rounded-full h-9 text-sm shadow-md select-none">
+          Scroll to top
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mouse stroke-purple-700"  height="20"
+            viewBox="0 0 24 24" stroke-width="1.5"  fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="6" y="3" width="12" height="18" rx="4" />
+            <line x1="12" y1="7" x2="12" y2="11" />
+          </svg>
         </span>
       </div>
     </footer>
